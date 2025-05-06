@@ -234,3 +234,90 @@
 2025-03-23 22:55:11 info: POST /api/users/register
 2025-03-23 22:55:11 error: Error in registerUser: This email already exists
 2025-03-23 22:55:11 error: Error registering user: This email already exists
+2025-04-02 04:21:33 info: Server is running on port 3000
+2025-04-02 04:21:33 info: MongoDB connection SUCCESS :)
+2025-04-02 04:23:46 info: POST /api/users/register
+2025-04-02 04:23:46 error: Error in registerUser: This email already exists
+2025-04-02 04:23:46 error: Error registering user: This email already exists
+2025-04-02 04:24:00 info: POST /api/users/register
+2025-04-02 04:24:00 error: Error in registerUser: This email already exists
+2025-04-02 04:24:00 error: Error registering user: This email already exists
+2025-04-02 04:24:06 info: POST /api/users/register
+2025-04-02 04:24:06 info: New user registered: rum, ru@gmail.com, user
+2025-04-02 04:24:06 info: User registered: 67ecbbe62b88cf30a43d41dd
+2025-04-02 04:24:11 info: GET /api/users
+2025-04-02 04:24:11 info: Retrieved 5 users
+2025-04-02 04:24:35 info: DELETE /api/users/67e00b50b52f4f591eee5002
+2025-04-02 04:56:59 info: Server is running on port 3000
+2025-04-02 04:56:59 info: MongoDB connection SUCCESS :)
+2025-04-02 05:00:39 info: Server is running on port 3000
+2025-04-02 05:00:39 info: MongoDB connection SUCCESS :)
+2025-04-02 05:01:37 info: Server is running on port 3000
+2025-04-02 05:01:37 info: MongoDB connection SUCCESS :)
+2025-04-02 05:02:16 info: Server is running on port 3000
+2025-04-02 05:02:16 info: MongoDB connection SUCCESS :)
+2025-04-02 07:55:40 info: Server is running on port 3000
+2025-04-02 07:55:40 info: MongoDB connection SUCCESS :)
+2025-04-02 08:33:12 info: Server is running on port 3000
+2025-04-02 08:33:12 info: MongoDB connection SUCCESS :)
+2025-04-02 08:33:45 info: POST /api/users/register
+2025-04-02 08:33:45 info: New user registered: deneme, deneme@gmail.com, user
+2025-04-02 08:33:45 info: User registered: 67ecf669f89021f83416c46f
+2025-04-02 08:34:10 info: POST /api/users/login
+2025-04-02 08:34:10 info: Login successful for user: 67ecf669f89021f83416c46f
+2025-04-02 08:34:10 info: User logged in: 67ecf669f89021f83416c46f
+2025-04-02 08:34:34 info: GET /api/users/67ecf669f89021f83416c46f
+2025-04-02 08:34:34 info: Retrieved user: 67ecf669f89021f83416c46f
+2025-04-02 08:35:00 info: PUT /api/users/67e0101092303314db102318
+2025-04-02 08:35:00 info: User updated: 67e0101092303314db102318
+2025-04-02 08:35:09 info: GET /api/users
+2025-04-02 08:35:09 info: Retrieved 6 users
+2025-04-02 08:35:50 info: POST /api/posts/create
+2025-04-02 08:35:50 info: New post created: 67ecf6e6f89021f83416c47b by user 67ecf669f89021f83416c46f
+2025-04-02 08:35:50 info: Post created: {"message":"Post created","postId":"67ecf6e6f89021f83416c47b"}
+2025-04-02 08:35:58 info: GET /api/posts
+2025-04-02 08:35:58 info: Retrieved 21 posts
+2025-04-02 08:36:16 info: GET /api/posts/user/67ecf669f89021f83416c46f
+2025-04-02 08:36:16 info: Retrieved 1 posts for user 67ecf669f89021f83416c46f
+2025-04-02 08:36:31 info: GET /api/posts/67e013bc92303314db102358
+2025-04-02 08:36:31 warn: Post not found with ID: 67e013bc92303314db102358
+2025-04-02 08:36:31 error: Error in getPostById: Post not found
+2025-04-02 08:36:31 error: Error retrieving post 67e013bc92303314db102358: Post not found
+2025-04-02 08:36:40 info: GET /api/posts
+2025-04-02 08:36:40 info: Retrieved 21 posts
+2025-04-02 08:36:55 info: GET /api/posts/67ecf6e6f89021f83416c47b
+2025-04-02 08:36:55 info: Retrieved post: 67ecf6e6f89021f83416c47b
+2025-04-02 08:37:24 info: PUT /api/posts/67e013bc92303314db102358
+2025-04-02 08:37:24 error: Validation error: [{"type":"field","msg":"Title is required","path":"title","location":"body"},{"type":"field","msg":"Title must be between 3 and 100 characters","path":"title","location":"body"},{"type":"field","msg":"Tags must be an array","path":"tags","location":"body"},{"type":"field","msg":"At least one tag is required","path":"tags","location":"body"}]
+2025-04-02 08:37:52 error: Unhandled error: Expected ',' or '}' after property value in JSON at position 33
+2025-04-02 08:38:01 info: PUT /api/posts/67e013bc92303314db102358
+2025-04-02 08:38:01 error: Validation error: [{"type":"field","msg":"Tags must be an array","path":"tags","location":"body"},{"type":"field","msg":"At least one tag is required","path":"tags","location":"body"}]
+2025-04-02 08:38:23 info: PUT /api/posts/67e013bc92303314db102358
+2025-04-02 08:38:23 warn: Update attempted on non-existent post: 67e013bc92303314db102358
+2025-04-02 08:38:23 error: Error in updatePost: Post not found
+2025-04-02 08:38:23 error: Error updating post 67e013bc92303314db102358: Post not found
+2025-04-02 08:38:32 info: PUT /api/posts/67ecf669f89021f83416c46f
+2025-04-02 08:38:32 warn: Update attempted on non-existent post: 67ecf669f89021f83416c46f
+2025-04-02 08:38:32 error: Error in updatePost: Post not found
+2025-04-02 08:38:32 error: Error updating post 67ecf669f89021f83416c46f: Post not found
+2025-04-02 08:38:57 info: PUT /api/posts/67ecf6e6f89021f83416c47b
+2025-04-02 08:38:57 info: Post updated: 67ecf6e6f89021f83416c47b by user 67ecf669f89021f83416c46f
+2025-04-02 08:38:57 info: Post updated: 67ecf6e6f89021f83416c47b by user 67ecf669f89021f83416c46f
+2025-04-02 08:39:15 info: DELETE /api/posts/67ecf6e6f89021f83416c47b
+2025-04-02 08:39:15 info: Post deleted: 67ecf6e6f89021f83416c47b by user 67ecf669f89021f83416c46f
+2025-04-02 08:39:15 info: Post deleted: 67ecf6e6f89021f83416c47b by user 67ecf669f89021f83416c46f
+2025-04-02 08:39:26 info: GET /api/posts/tag/yaz%C4%B1l%C4%B1m
+2025-04-02 08:39:26 info: Retrieved 3 posts with tag yazılım
+2025-04-02 11:04:19 info: GET /api/posts/tag/yaz%C4%B1l%C4%B1m
+2025-04-02 11:04:19 info: Retrieved 3 posts with tag yazılım
+2025-04-02 11:04:35 info: PUT /api/posts/67ecf6e6f89021f83416c47b
+2025-04-02 11:04:35 warn: Update attempted on non-existent post: 67ecf6e6f89021f83416c47b
+2025-04-02 11:04:35 error: Error in updatePost: Post not found
+2025-04-02 11:04:35 error: Error updating post 67ecf6e6f89021f83416c47b: Post not found
+2025-05-06 21:36:42 info: Server is running on port 3000
+2025-05-06 21:37:12 error: MongoDB connection FAIL :( getaddrinfo ENOTFOUND mongo_db
+2025-05-06 21:40:37 info: Server is running on port 3000
+2025-05-06 21:40:37 info: MongoDB connection SUCCESS :)
+2025-05-06 21:42:09 info: POST /api/users/register
+2025-05-06 21:42:09 error: Error in registerUser: elasticClient is not defined
+2025-05-06 21:42:09 error: Error registering user: elasticClient is not defined

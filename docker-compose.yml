@@ -8,6 +8,8 @@ services:
       - "27017:27017"
     volumes:
       - mongo_db:/data/db
+    networks:
+      - app-network  
   #node js services
   api:
     build: .
@@ -22,13 +24,50 @@ services:
       JWT_SECRET: 2003Rumeysa
       CHOKIDAR_USEPOLLING: "true"
       NODE_ENV: development
+      ELASTICSEARCH_URL: http://elasticsearch:9200
 
     command: npm run dev
 
     depends_on:
-      - mongo_db  
+      - mongo_db
+      - elasticsearch
+    networks:
+      - app-network  
+    #kibana services  
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.13.2
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - xpack.security.enabled=false
+    depends_on:
+      - elasticsearch
+    restart: always
+    networks:
+      - app-network  
+    #elasticsearch services
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.13.2
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - app-network        
 volumes:
   mongo_db: {}      
+  elasticsearch_data: {}
+
+networks:
+  app-network:
+    
     
 
  

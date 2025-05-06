@@ -119,6 +119,21 @@ const deletePost = async (req, res) => {
         }
     }
 };
+const searchPosts = async (req, res) => {
+    try {
+        const { q } = req.query;
+        if (!q) {
+            return res.status(400).json({ message: "Search query is required" });
+        }
+
+        const results = await postService.searchPosts(q);
+        logger.info(`Search performed with query: ${q}`);
+        res.json(results);
+    } catch (error) {
+        logger.error(`Error in search: ${error.message}`);
+        res.status(500).json({ message: error.message });
+    }
+};
 module.exports = {
     createPost,
     getAllPosts,
@@ -127,4 +142,5 @@ module.exports = {
     getPostById,
     updatedPost,
     deletePost,
+    searchPosts,
 };

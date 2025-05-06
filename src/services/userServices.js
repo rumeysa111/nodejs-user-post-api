@@ -2,8 +2,9 @@ const User = require("../models/userModel");
 const Post = require("../models/postModel");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const logger = require("../utils/logger");  
+const logger = require("../utils/logger");
 const { default: mongoose } = require("mongoose");
+const  { elasticClient } = require("../config/elastic_search");
 
 const registerUser = async (username, email, password, role) => {
     try {
@@ -11,6 +12,19 @@ const registerUser = async (username, email, password, role) => {
         if (existingUser) throw new Error("This email already exists"); // eğer varsa hata fırlatıyoruz.
         const newUser = new User({ username, email, password, role }); // eğer yoksa yeni kullanıcı oluşturuyoruz.
         await newUser.save(); // yeni kullanıcıyı kaydediyoruz.
+
+        // elatic searche kaydediyoruz.
+        await elasticClient.index({
+            index: "users",
+            id: newUser._id.toString(),
+            document: {
+                username,
+                email,
+                role: role || "user",
+                userId: newUser._id.toString(),
+                createdAt: new Date(),
+            }
+        });
         logger.info(`New user registered: ${username}, ${email}, ${role || 'user'}`);
 
         return {
@@ -99,6 +113,21 @@ const updateUser = async (userId, updateData) => {
             { $set: updateData },
             { new: true, runValidators: true }
         ).select("-password");
+        // elastic search güncelleme işlemi yapıyoruz.
+        await elasticClient.update({
+            index: "users",
+            id: userId,
+            doc: {
+                username: updateData.username || user.username,
+                email: updateData.email || user.email,
+                role: updateData.role || user.role,
+                updatedAt: new Date()
+            }
+        });
+        logger.info(`User updated in MongoDB and Elasticsearch: ${userId}`);
+        await redisClient.del(`user_${userId}`); // güncellenen kullanıcıyı redis cache'den sil	
+        await redisClient.del('all_users'); // tüm kullanıcıları redis cache'den sil
+
 
         return updatedUser;
     } catch (error) {
@@ -116,11 +145,50 @@ const deleteUser = async (userId) => {
 
         // Kullanıcıya ait tüm postları sil
         const deletedPosts = await Post.deleteMany({ userId: userId });
-
+        // Elasticsearch'den kullanıcı ve postlarını sil
+        await Promise.all([
+            elasticClient.delete({
+                index: 'users',
+                id: userId
+            }),
+            elasticClient.deleteByQuery({
+                index: 'posts',
+                body: {
+                    query: {
+                        term: { userId: userId }
+                    }
+                }
+            })
+        ]);
         return {
             user: user,
             deletedPostsCount: deletedPosts.deletedCount
         };
+    } catch (error) {
+        logger.error(`Error: ${error.message}`);
+        throw new Error(error.message);
+    }
+};
+
+const searchUsers = async (query) => {
+    try {
+        const result = await elasticClient.search({
+            index: 'users',
+            body: {
+                query: {
+                    multi_match: {
+                        query: query,
+                        fields: ['username', 'email'],
+                    
+                    }
+                }
+            }
+        });
+        logger.info('search perfomed with query: ${query}');
+        return result.hits.hits.map(hit => ({
+            ...hit._source,
+            score: hit._score,
+        }));
     } catch (error) {
         logger.error(`Error: ${error.message}`);
         throw new Error(error.message);
@@ -134,4 +202,5 @@ module.exports = {
     getUserById,
     updateUser,
     deleteUser,
+    searchUsers,
 }

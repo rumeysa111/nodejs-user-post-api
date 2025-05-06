@@ -1,3 +1,4 @@
+const { elasticClient } = require("../config/elastic_search");
 const Post = require("../models/postModel");
 const User = require("../models/userModel");  // Bu satırı ekleyin
 const logger = require("../utils/logger");
@@ -12,6 +13,20 @@ const createPost = async (title, content, tags, userId) => {
         }
         const newPost = new Post({ title, content, tags, userId });
         await newPost.save();
+        await elasticClient.index({
+            index: "posts",
+            document: {
+                title,
+                content,
+                tags,
+                userId,
+                postId: newPost._id.toString(),
+                createdAt: new Date()
+            }
+
+
+        });
+
         logger.info(`New post created: ${newPost._id} by user ${userId}`);
 
         return {
@@ -24,10 +39,43 @@ const createPost = async (title, content, tags, userId) => {
         throw new Error(error.message);
     }
 };
+// searchPosts fonksiyonu elastic search ile arama yapıyor.
+const searchPosts = async (query) => {
+    try {
+        const result = await elasticClient.search({
+            index: "posts",
+            body: {
+                query: {
+                    multi_match: {
+                        query: query,
+                        fields: ["title", "content", "tags"]
+                    }
+                }
+            }
+        });
+        return result.hits.hits.map(hit => ({
+            ...hit._source,
+            _id: hit._id // ElasticSearch'den dönen her postun _id'sini ekliyoruz
+        }));
+    } catch (error) {
+        logger.error(`Error in searchPosts: ${error.message}`);
+        throw new Error(error.message);
+
+    }
+};
 const getAllPosts = async () => {
     try {
         const posts = await Post.find({}).populate("userId", "username email").sort({ createdAt: -1 });
-        logger.debug(`Retrieved ${posts.length} posts`);
+        const elasticPosts = await elasticClient.search({
+            index: "posts",
+            size: 10000, // İstediğiniz maksimum post sayısını buraya yazabilirsiniz
+            // body: {
+            //   query: {
+            //     match_all: {}
+            //}
+            //}
+        })
+        logger.debug(`Retrieved ${posts.length} posts from MongoDB and ${elasticPosts.hits.hits.length} from Elasticsearch`);
 
         return posts;
     } catch (error) {
@@ -47,6 +95,17 @@ const getPostsByUserId = async (userId) => {
         }
 
         const posts = await Post.find({ userId }).populate("userId", "username email").sort({ createdAt: -1 });
+        // elastic search den de kullanıcının postlarını getiriyoruz
+        const elasticPosts = await elasticClient.search({
+            index: "posts",
+            body: {
+                query: {
+                    match: {
+                        userId: userId
+                    }
+                }
+            }
+        });
         logger.debug(`Retrieved ${posts.length} posts for user ${userId}`);
 
         return posts;
@@ -61,7 +120,17 @@ const getPostsByTag = async (tag) => {
     try {
         const posts = await Post.find({ tags: tag }).populate("userId", "username email").sort({ createdAt: -1 });
         logger.debug(`Retrieved ${posts.length} posts with tag: ${tag}`);
-
+        // elastic search den de tag'e göre postları getiriyoruz
+        const elasticPosts = await elasticClient.search({
+            index: 'posts',
+            body: {
+                query: {
+                    term: {
+                        tags: tag
+                    }
+                }
+            }
+        });
         return posts;
     } catch (error) {
         logger.error(`Error in getPostsByTag: ${error.message}`);
@@ -73,10 +142,16 @@ const getPostById = async (postId) => {
     try {
         const post = await Post.findById(postId).populate("userId", "username email");
         if (!post) {
-            logger.warn(`Post not found with ID: ${postId}`);
+            // Elasticsearch'den de kontrol et
+            const elasticPost = await elasticClient.get({
+                index: 'posts',
+                id: postId
+            });
 
-            throw new Error("Post not found");
-
+            if (!elasticPost.found) {
+                logger.warn(`Post not found with ID: ${postId}`);
+                throw new Error("Post not found");
+            }
         }
         logger.debug(`Retrieved post: ${postId}`);
 
@@ -108,7 +183,18 @@ const updatePost = async (postId, userId, updateData) => {
         }
         const updatedPost = await Post.findByIdAndUpdate(postId, { $set: updateData }, { new: true, runValidators: true }).populate("userId", "username email");
         logger.info(`Post updated: ${postId} by user ${userId}`);
-
+        // elastic search güncelleme işlemi
+        await elasticClient.update({
+            index: 'posts',
+            id: postId,
+            doc: {
+                title: updateData.title,
+                content: updateData.content,
+                tags: updateData.tags,
+                updatedAt: new Date()
+            }
+        });
+        logger.info(`Post updated in MongoDB and Elasticsearch: ${postId} by user ${userId}`);
         return updatedPost;
     } catch (error) {
         logger.error(`Error in updatePost: ${error.message}`);
@@ -118,9 +204,9 @@ const updatePost = async (postId, userId, updateData) => {
 };
 const deletePost = async (postId, userId) => {
     try {
-           // Önce kullanıcının var olup olmadığını kontrol et
-           const user = await User.findById(userId);
-           if (!user) {
+        // Önce kullanıcının var olup olmadığını kontrol et
+        const user = await User.findById(userId);
+        if (!user) {
             logger.warn(`Post deletion attempted with invalid user ID: ${userId}`);
             throw new Error("User not found");
         }
@@ -129,9 +215,15 @@ const deletePost = async (postId, userId) => {
             logger.warn(`Deletion attempted on non-existent post: ${postId}`);
             throw new Error("Post not found");
         }
-      
+
         await Post.findByIdAndDelete(postId);
         logger.info(`Post deleted: ${postId} by user ${userId}`);
+        // elastic search den silme işlemi
+        await elasticClient.delete({
+            index: "posts",
+            id: post._id.toString()
+        });
+        logger.info(`Post deleted from MongoDB and Elasticsearch: ${postId} by user ${userId}`);
 
         return { message: "Post deleted successfully", postId: postId };
     } catch (error) {
@@ -148,5 +240,6 @@ module.exports = {
     getPostsByTag,
     getPostById,
     updatePost,
-    deletePost
+    deletePost,
+    searchPosts
 };
