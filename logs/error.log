@@ -203,3 +203,36 @@
 2025-05-08 08:36:01 error: Error registering user: This email already exists
 2025-05-08 08:36:05 error: Error: User not found
 2025-05-08 08:36:05 error: Error logging in user: User not found
+2025-05-08 08:41:51 error: Error: User not found
+2025-05-08 08:41:51 error: Error logging in user: User not found
+2025-05-08 08:42:25 error: Error in createPost: Missing required parameter: body
+2025-05-08 08:42:25 error: Error creating post: Missing required parameter: body
+2025-05-08 08:46:34 error: Error in getAllPosts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:46:34 error: Error retrieving all posts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:46:58 error: Error in getAllPosts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:46:58 error: Error retrieving all posts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:46:59 error: Error in getAllPosts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:46:59 error: Error retrieving all posts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:47:00 error: Error in getAllPosts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:47:00 error: Error retrieving all posts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:47:01 error: Error in getAllPosts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:47:01 error: Error retrieving all posts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:47:02 error: Error in getAllPosts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:47:02 error: Error retrieving all posts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:47:16 error: Error in getAllPosts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:47:16 error: Error retrieving all posts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:49:09 error: Error in getAllPosts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:49:09 error: Error retrieving all posts: Cannot read properties of undefined (reading 'hits')
+2025-05-08 08:52:28 error: Error in getAllPosts: elasticResponse is not defined
+2025-05-08 08:52:28 error: Error retrieving all posts: elasticResponse is not defined
+2025-05-08 08:52:34 error: Error in getAllPosts: elasticResponse is not defined
+2025-05-08 08:52:34 error: Error retrieving all posts: elasticResponse is not defined
+2025-05-08 08:55:50 error: Error in getPostsByUserId: posts is not defined
+2025-05-08 08:55:50 error: Error retrieving posts by user 681c5834cba2b385590c3c59: posts is not defined
+2025-05-08 08:56:07 error: Error in getPostsByUserId: posts is not defined
+2025-05-08 08:56:07 error: Error retrieving posts by user 681c5834cba2b385590c3c59: posts is not defined
+2025-05-08 08:56:11 error: Error in getPostsByUserId: posts is not defined
+2025-05-08 08:56:11 error: Error retrieving posts by user 681c5834cba2b385590c3c59: posts is not defined
+2025-05-08 08:59:49 error: Validation error: [{"type":"field","msg":"Title is required","path":"title","location":"body"},{"type":"field","msg":"Title must be between 3 and 100 characters","path":"title","location":"body"},{"type":"field","msg":"Tags must be an array","path":"tags","location":"body"},{"type":"field","msg":"At least one tag is required","path":"tags","location":"body"}]
+2025-05-08 09:00:17 error: Error in deletePost: {"_index":"posts","_type":"_doc","_id":"681c6e7181bf74b6fd1a930d","_version":1,"result":"not_found","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}
+2025-05-08 09:00:17 error: Error deleting post 681c6e7181bf74b6fd1a930d: {"_index":"posts","_type":"_doc","_id":"681c6e7181bf74b6fd1a930d","_version":1,"result":"not_found","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}

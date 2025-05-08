@@ -15,7 +15,8 @@ const createPost = async (title, content, tags, userId) => {
         await newPost.save();
         await elasticClient.index({
             index: "posts",
-            document: {
+            id: newPost._id.toString(),
+            body: {
                 title,
                 content,
                 tags,
@@ -53,6 +54,8 @@ const searchPosts = async (query) => {
                 }
             }
         });
+        const hits = result.body ? result.body.hits : (result.hits || { hits: [] });
+
         return result.hits.hits.map(hit => ({
             ...hit._source,
             _id: hit._id // ElasticSearch'den dönen her postun _id'sini ekliyoruz
@@ -66,37 +69,34 @@ const searchPosts = async (query) => {
 const getAllPosts = async () => {
     try {
         const posts = await Post.find({}).populate("userId", "username email").sort({ createdAt: -1 });
-        const elasticPosts = await elasticClient.search({
+        
+        // Değişken adı: elasticResponse
+        const elasticResponse = await elasticClient.search({
             index: "posts",
-            size: 10000, // İstediğiniz maksimum post sayısını buraya yazabilirsiniz
-            // body: {
-            //   query: {
-            //     match_all: {}
-            //}
-            //}
-        })
-        logger.debug(`Retrieved ${posts.length} posts from MongoDB and ${elasticPosts.hits.hits.length} from Elasticsearch`);
+            size: 10000
+        });
+        
+        // Aynı değişken adını kullanın
+        const elasticHits = elasticResponse.body ? 
+            elasticResponse.body.hits : 
+            (elasticResponse.hits || { hits: [] });
+        
+        logger.debug(`Retrieved ${posts.length} posts from MongoDB and ${elasticHits.hits.length} from Elasticsearch`);
 
         return posts;
     } catch (error) {
         logger.error(`Error in getAllPosts: ${error.message}`);
         throw new Error(error.message);
-
     }
 };
+
 const getPostsByUserId = async (userId) => {
     try {
-        // öncce kullanıcı var mı onu kontrol ediyoruz 
-        const user = await User.findById(userId);
-        if (!user) {
-            logger.warn(`Posts requested for invalid user ID: ${userId}`);
-
-            throw new Error("User not found");
-        }
-
+        // MongoDB'den kullanıcıya ait gönderileri al (bu satır eksikti)
         const posts = await Post.find({ userId }).populate("userId", "username email").sort({ createdAt: -1 });
-        // elastic search den de kullanıcının postlarını getiriyoruz
-        const elasticPosts = await elasticClient.search({
+        
+        // Elasticsearch'ten de verileri al
+        const elasticResponse = await elasticClient.search({
             index: "posts",
             body: {
                 query: {
@@ -106,22 +106,27 @@ const getPostsByUserId = async (userId) => {
                 }
             }
         });
+        
+        // Elasticsearch yanıt yapısı kontrolü
+        const elasticHits = elasticResponse.body ? 
+            elasticResponse.body.hits : 
+            (elasticResponse.hits || { hits: [] });
+        
         logger.debug(`Retrieved ${posts.length} posts for user ${userId}`);
 
         return posts;
     } catch (error) {
         logger.error(`Error in getPostsByUserId: ${error.message}`);
-        throw new Error(error.message
-        );
-
+        throw new Error(error.message);
     }
 };
+
 const getPostsByTag = async (tag) => {
     try {
         const posts = await Post.find({ tags: tag }).populate("userId", "username email").sort({ createdAt: -1 });
         logger.debug(`Retrieved ${posts.length} posts with tag: ${tag}`);
         // elastic search den de tag'e göre postları getiriyoruz
-        const elasticPosts = await elasticClient.search({
+        const elasticResponse = await elasticClient.search({
             index: 'posts',
             body: {
                 query: {
@@ -131,6 +136,10 @@ const getPostsByTag = async (tag) => {
                 }
             }
         });
+               // Elasticsearch 7.x yanıt yapısı kontrolü
+               const elasticHits = elasticResponse.body ? 
+               elasticResponse.body.hits : 
+               (elasticResponse.hits || { hits: [] });
         return posts;
     } catch (error) {
         logger.error(`Error in getPostsByTag: ${error.message}`);
@@ -187,12 +196,13 @@ const updatePost = async (postId, userId, updateData) => {
         await elasticClient.update({
             index: 'posts',
             id: postId,
+            body:{
             doc: {
                 title: updateData.title,
                 content: updateData.content,
                 tags: updateData.tags,
                 updatedAt: new Date()
-            }
+            }}
         });
         logger.info(`Post updated in MongoDB and Elasticsearch: ${postId} by user ${userId}`);
         return updatedPost;
