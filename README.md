@@ -1,88 +1,102 @@
-# Node.js Rest API with MongoDB ve Docker
+Elbette! Aşağıda GitHub’a uygun biçimde düzenlenmiş, **tamamen formatlanmış** ve **kopyalanmaya hazır** bir `README.md` içeriği yer alıyor:
 
-Node.js, Express, MongoDB ve Docker kullanarak oluşturulmuş bir blog gönderisi ve kullanıcı yönetimi RESTful API'si. Bu proje, kullanıcı kaydı, kimlik doğrulama ve gönderi yönetimini profesyonel loglama ve veri doğrulama özellikleriyle birlikte sunar.
+---
 
-## 📋 Özellikler
+````markdown
+# 🧩 Node.js REST API with MongoDB, Docker & Elasticsearch
+
+Bu proje; **Node.js**, **Express**, **MongoDB**, **Docker** ve **Elasticsearch** kullanarak geliştirilmiş kapsamlı bir **blog gönderisi ve kullanıcı yönetimi API'sidir**. Kullanıcı kaydı, JWT tabanlı kimlik doğrulama, gönderi yönetimi, veri doğrulama, loglama ve Elasticsearch senkronizasyonu gibi modern backend bileşenlerini içerir.
+
+---
+
+## 📋 Temel Özellikler
 
 | Özellik               | Açıklama                                                                 |
 |-----------------------|---------------------------------------------------------------------------|
-| **Kullanıcı Yönetimi** | Yeni kullanıcı kaydı, JWT ile kimlik doğrulama, kullanıcı profillerini görüntüleme/güncelleme/silme |
-| **Gönderi Yönetimi**  | Blog gönderisi oluşturma, okuma, güncelleme ve silme, gönderileri kullanıcıya/tags'e göre filtreleme, gönderi düzenleme/silme için yetkilendirme kontrolleri |
-| **Veri Doğrulama**    | Express-validator ile kullanıcı girişi ve gönderi doğrulama, hata mesajları standardizasyonu |
-| **Profesyonel Loglama** | Winston ile yapılandırılmış loglama, dosya ve konsol logları, hata izleme ve debug desteği |
-| **Docker Entegrasyonu**| Konteynerleştirilmiş uygulama, MongoDB veritabanı konteyneri, Docker Compose kurulumu |
+| **Kullanıcı Yönetimi** | Kayıt, JWT ile oturum açma, kullanıcı profillerini görüntüleme/güncelleme/silme |
+| **Gönderi Yönetimi**  | CRUD işlemleri, kullanıcı ve etiket bazlı filtreleme
+| **Veri Doğrulama**    | `express-validator` ile giriş doğrulama ve hata standardizasyonu |
+| **Loglama**           | `winston` ile detaylı dosya ve konsol logları |
+| **Docker Desteği**    | Docker Compose ile konteynerleştirilmiş yapı |
+| **Elasticsearch**     | Verilerde tam metin arama ve hızlı sorgulama |
+| **Kibana Entegrasyonu** | Arayüz üzerinden veri analizi ve görselleştirme |
+| **Cron Görevleri**    | Otomatik senkronizasyon işlemleri için zamanlanmış görevler |
+
+---
 
 ## 🛠️ Kullanılan Teknolojiler
 
-| Teknoloji           | Açıklama                                                   |
-|---------------------|------------------------------------------------------------|
-| **Node.js**         | JavaScript çalışma zamanı ortamı                           |
-| **Express**         | Web uygulaması framework'ü                                 |
-| **MongoDB**         | NoSQL veritabanı                                           |
-| **Mongoose**        | MongoDB obje modelleme                                      |
-| **Express-validator** | Giriş doğrulama ve sanitizasyon                           |
-| **Winston**         | Yapılandırılabilir loglama sistemi                         |
-| **JWT**             | Kimlik doğrulama için JSON Web Token'ları                  |
-| **bcryptjs**        | Parola şifreleme                                           |
-| **Docker**          | Konteynerleştirme                                           |
-| **Docker Compose**  | Çoklu konteynerli Docker uygulamaları                       |
+| Teknoloji         | Açıklama                                       |
+|-------------------|------------------------------------------------|
+| Node.js           | JavaScript çalışma zamanı ortamı              |
+| Express           | Minimal ve esnek web framework'ü              |
+| MongoDB           | NoSQL veritabanı                              |
+| Mongoose          | MongoDB için ODM (Object Data Modeling)       |
+| JWT               | JSON Web Token ile kimlik doğrulama           |
+| bcryptjs          | Güvenli parola hashleme                       |
+| express-validator | Giriş doğrulama ve sanitizasyon                |
+| Winston           | Gelişmiş loglama altyapısı                    |
+| Docker            | Konteynerleştirme çözümü                      |
+| Docker Compose    | Çoklu konteyner yönetimi                      |
+| Elasticsearch     | Arama motoru                                  |
+| Kibana            | Elasticsearch verilerini görselleştirme aracı |
+
+---
 
 ## 🚀 Başlarken
 
 ### Gereksinimler
 
-| Araç               | Bağlantı                                                            |
-|--------------------|---------------------------------------------------------------------|
-| Docker             | [Docker'ı Başlat](https://www.docker.com/get-started)               |
-| Docker Compose     | [Docker Compose Kurulumu](https://docs.docker.com/compose/install/) |
+| Araç             | Bağlantı                                                   |
+|------------------|------------------------------------------------------------|
+| Docker           | [Docker'ı İndir](https://www.docker.com/get-started)       |
+| Docker Compose   | [Docker Compose Kurulumu](https://docs.docker.com/compose/install/) |
 
-### Kurulum ve Yapılandırma
+---
 
-1. **Depoyu klonlayın**
+## ⚙️ Kurulum Adımları
 
 ```bash
+# 1. Depoyu klonlayın
 git clone https://github.com/rumeysa111/nodejs-user-post-api.git
-```
 
-2. **Docker ile Çalıştırma**
-
-```bash
+# 2. Docker konteynerlerini başlatın
 docker-compose up
-```
+````
 
-Uygulama `http://localhost:3000` adresinde kullanılabilir.
+* Uygulama: [http://localhost:3000](http://localhost:3000)
+* Kibana: [http://localhost:5601](http://localhost:5601)
 
-### Çevre Değişkenleri
+---
 
-| Değişken          | Açıklama                                          |
-|-------------------|--------------------------------------------------|
-| PORT              | Uygulama portu (varsayılan: 3000)                |
-| MONGO_URI         | MongoDB bağlantı dizesi                         |
-| JWT_SECRET        | JWT token üretimi için gizli anahtar             |
+## 🔧 Çevre Değişkenleri (.env)
 
-## 📚 API Dokümantasyonu
+| Değişken    | Açıklama                          |
+| ----------- | --------------------------------- |
+| PORT        | Sunucu portu (varsayılan: 3000)   |
+| MONGO\_URI  | MongoDB bağlantı dizesi           |
+| JWT\_SECRET | JWT oluşturmak için gizli anahtar |
 
-### Kimlik Doğrulama Uç Noktaları
+---
 
-| Uç Nokta                         | Yöntem  | Açıklama                                    | Gerekli Yetkiler |
-|-----------------------------------|---------|---------------------------------------------|------------------|
-| **Yeni kullanıcı kaydı**          | POST    | /api/users/register                         | Yetki gerekmez   |
-| **Kullanıcı girişi**              | POST    | /api/users/login                            | Yetki gerekmez   |
+## 🔐 Kimlik Doğrulama
 
-**Yeni kullanıcı kaydı:**
+### Yeni Kullanıcı Kaydı
 
 ```json
+POST /api/users/register
 {
   "username": "example",
   "email": "example@example.com",
   "password": "password123",
-  "role": "user" // Opsiyonel, varsayılan "user"
+  "role": "user" // Opsiyonel
 }
 ```
 
-**Kullanıcı girişi:**
+### Giriş
 
 ```json
+POST /api/users/login
 {
   "email": "example@example.com",
   "password": "password123"
@@ -98,165 +112,77 @@ Uygulama `http://localhost:3000` adresinde kullanılabilir.
 }
 ```
 
+---
+
+## 👥 Kullanıcı ve Gönderi API'leri
+
 ### Kullanıcı Uç Noktaları
 
-| Uç Nokta                          | Yöntem  | Açıklama                                  | Gerekli Yetkiler |
-|------------------------------------|---------|------------------------------------------|------------------|
-| **Tüm kullanıcıları getir**       | GET     | /api/users                               | Yetki gerekmez   |
-| **Kullanıcıyı ID ile getir**      | GET     | /api/users/:id                           | Yetki gerekmez   |
-| **Kullanıcıyı güncelle**          | PUT     | /api/users/:id                           | Kimlik doğrulama |
-| **Kullanıcıyı sil**               | DELETE  | /api/users/:id                           | Kimlik doğrulama |
+| Metot  | Uç Nokta        | Açıklama                | Yetki   |
+| ------ | --------------- | ----------------------- | ------- |
+| GET    | /api/users      | Tüm kullanıcıları getir | Yok     |
+| GET    | /api/users/\:id | ID ile kullanıcı getir  | Yok     |
+| PUT    | /api/users/\:id | Kullanıcıyı güncelle    | Gerekli |
+| DELETE | /api/users/\:id | Kullanıcıyı sil         | Gerekli |
 
 ### Gönderi Uç Noktaları
 
-| Uç Nokta                           | Yöntem  | Açıklama                                  | Gerekli Yetkiler |
-|-------------------------------------|---------|------------------------------------------|------------------|
-| **Yeni gönderi oluştur**           | POST    | /api/posts/create                        | Kimlik doğrulama |
-| **Tüm gönderileri getir**          | GET     | /api/posts                               | Yetki gerekmez   |
-| **Kullanıcıya ait gönderileri getir**| GET    | /api/posts/user/:id                      | Yetki gerekmez   |
-| **Tag'e göre gönderileri getir**   | GET     | /api/posts/tag/:tag                      | Yetki gerekmez   |
-| **Gönderiyi ID ile getir**         | GET     | /api/posts/:id                           | Yetki gerekmez   |
-| **Gönderiyi güncelle**             | PUT     | /api/posts/:id                           | Kimlik doğrulama + Gönderi sahibi |
-| **Gönderiyi sil**                  | DELETE  | /api/posts/:id                           | Kimlik doğrulama + Gönderi sahibi |
+| Metot  | Uç Nokta             | Açıklama                   | Yetki          |
+| ------ | -------------------- | -------------------------- | -------------- |
+| POST   | /api/posts/create    | Yeni gönderi oluştur       | Gerekli        |
+| GET    | /api/posts           | Tüm gönderileri getir      | Yok            |
+| GET    | /api/posts/user/\:id | Kullanıcıya ait gönderiler | Yok            |
+| GET    | /api/posts/tag/\:tag | Etikete göre filtreleme    | Yok            |
+| PUT    | /api/posts/\:id      | Gönderiyi güncelle         | Gönderi Sahibi |
+| DELETE | /api/posts/\:id      | Gönderiyi sil              | Gönderi Sahibi |
 
-### Servis Parametreleri ve Yanıt Detayları
+---
 
-#### Gönderi Servisleri
+## 🐳 Docker Ortamı
 
-**Yeni gönderi oluşturma (createPost):**
-- Parametreler: `title`, `content`, `tags` (dizi), `userId`
-- Yanıt: `{ message: "Post created", postId: "POST_ID" }`
+| Servis        | Port  | Açıklama                      |
+| ------------- | ----- | ----------------------------- |
+| api           | 3000  | Node.js Express API           |
+| mongo\_db     | 27017 | MongoDB veritabanı            |
+| elasticsearch | 9200  | Arama motoru                  |
+| kibana        | 5601  | Elasticsearch yönetim arayüzü |
 
-**Gönderi güncelleme (updatePost):**
-- Parametreler: `postId`, `userId`, `updateData` (güncelleme verileri)
-- Yetkilendirme: Sadece gönderi sahibi güncelleyebilir
-- Yanıt: Güncellenmiş gönderi nesnesi
+---
 
-**Gönderi silme (deletePost):**
-- Parametreler: `postId`, `userId`
-- Yetkilendirme: Sadece gönderi sahibi silebilir
-- Yanıt: `{ message: "Post deleted successfully", postId: "POST_ID" }`
+## 🔍 Elasticsearch & Kibana
 
-#### Kullanıcı Servisleri
+### Özellikler
 
-**Kullanıcı güncelleme (updateUser):**
-- Parametreler: `userId`, `updateData` (güncelleme verileri)
-- Özel kontroller: Email ve kullanıcı adı benzersiz olmalıdır
-- Yanıt: Güncellenmiş kullanıcı nesnesi (şifresiz)
+* Tam metin arama
+* Etiket, içerik, kullanıcıya göre filtreleme
+* Kibana ile veri görselleştirme ve keşif
 
-**Kullanıcı silme (deleteUser):**
-- Parametreler: `userId`
-- Yan etki: Kullanıcının tüm gönderileri de silinir
-- Yanıt: `{ user: kullanıcı_nesnesi, deletedPostsCount: silinen_gönderi_sayısı }`
+### Senkronizasyon API’leri
 
-### Hata Durumları
+| Uç Nokta             | Açıklama                                  |
+| -------------------- | ----------------------------------------- |
+| POST /api/sync/users | Tüm kullanıcıları Elasticsearch'e aktarır |
+| POST /api/sync/posts | Tüm gönderileri Elasticsearch'e aktarır   |
 
-| HTTP Kodu | Açıklama                            | Örnek Mesaj                                   |
-|-----------|-------------------------------------|----------------------------------------------|
-| 400       | Geçersiz istek                      | "This email already exists"                   |
-| 401       | Kimlik doğrulama hatası             | "Invalid credentials"                         |
-| 403       | Yetkilendirme hatası                | "You are not authorized to update this post"  |
-| 404       | Kaynak bulunamadı                   | "User not found" veya "Post not found"        |
-| 500       | Sunucu hatası                       | "Internal server error"                       |
+### Cron Görevleri
 
-## 📊 Loglama Sistemi
+| Görev          | Zamanlama        |
+| -------------- | ---------------- |
+| Kullanıcı Sync | Her 4 saatte bir |
+| Gönderi Sync   | Her 2 saatte bir |
 
-Uygulama, Winston kütüphanesini kullanarak yapılandırılmış bir loglama sistemi sunar:
+---
 
-- **Konsol Logları**: Renkli formatlanmış loglar geliştirme sırasında görünürlük sağlar
-- **Dosya Logları**: İki ayrı log dosyası tutulur:
-  - combined.log: Tüm loglar
-  - error.log: Sadece hata logları
-- **Log Seviyeleri**: 
-  - `error`: Kritik hatalar
-  - `warn`: Uyarılar
-  - `info`: Bilgilendirici mesajlar
-  - `debug`: Detaylı debugging bilgisi
+## 🧪 Postman Testleri
 
-## 🔐 Güvenlik Özellikleri
+1. Postman’i indirip açın: [https://www.postman.com/downloads](https://www.postman.com/downloads)
+2. `postman_collections` klasöründeki JSON dosyalarını import edin
+3. JWT token aldıktan sonra "Authorization" sekmesinde Bearer Token olarak kullanın
 
-Bu API, aşağıdaki güvenlik özelliklerini içerir:
-
-- **Şifre Hashleme**: Bcrypt ile güvenli şifre depolama
-- **JWT Doğrulama**: Güvenli API erişimi için JWT tabanlı kimlik doğrulama
-- **Veri Doğrulama**: Express-validator ile kullanıcı girdilerinin doğrulanması
-- **Hata İşleme**: Güvenli ve standartlaştırılmış hata mesajları
-
-
-### Proje Yapısı
-
-```bash
-nodejs-case/
-├── src/
-│   ├── config/       # Veritabanı yapılandırması
-│   ├── controllers/  # Request controller'ları
-│   ├── middlewares/  # Auth ve validation middlewares
-│   ├── models/       # Mongoose modelleri
-│   ├── routes/       # Express route tanımları
-│   ├── services/     # İş mantığı servisleri
-│   ├── utils/        # Logger ve yardımcı fonksiyonlar
-│   └── server.js     # Ana uygulama başlangıç noktası
-├── logs/             # Winston log dosyaları
-├── postman_collections/ # Postman API test koleksiyonları
-│   ├── postman_user_api.json  # Kullanıcı API koleksiyonu
-│   └── postman_post_api.json  # Post API koleksiyonu
-├── .dockerignore
-├── .env
-├── docker-compose.yml
-├── Dockerfile
-├── package.json
-└── README.md
-```
-
-## 🐳 Docker Bilgisi
-
-| Komut                                     | Açıklama                                   |
-|-------------------------------------------|-------------------------------------------|
-| **Uygulamayı loglarla başlat**            | `docker-compose up`                       |
-| **Uygulamayı ayrılmış modda başlat**     | `docker-compose up -d`                    |
-| **Uygulamayı durdur**                     | `docker-compose down`                     |
-| **Uygulamayı yeniden derle**             | `docker-compose up --build`               |
-| **Logları görüntüle**                    | `docker-compose logs api`                 |
-| **Konteyner shell erişimi**              | `docker-compose exec api sh`              |
-
-## 🧪 API Test Koleksiyonları
-
-Bu proje, API endpointlerinin test edilmesi için Postman koleksiyonları içermektedir. Bu koleksiyonlar sayesinde, tüm API fonksiyonlarını kolayca test edebilirsiniz.
-
-### Postman Koleksiyonlarını Kullanma
-
-1. [Postman](https://www.postman.com/downloads/) uygulamasını indirin ve yükleyin
-2. Postman'de "Import" butonuna tıklayın
-3. `postman_collections` klasöründeki JSON dosyalarını seçin:
-   - `postman_user_api.json`: Kullanıcı işlemleri için API koleksiyonu
-   - `postman_post_api.json`: Gönderi işlemleri için API koleksiyonu
-
-### Test Adımları
-
-API'yi test etmek için aşağıdaki tipik akışı takip edebilirsiniz:
-
-1. **Kullanıcı İşlemleri**:
-   - `kayıt` endpoint'i ile yeni bir kullanıcı kaydı oluşturun
-   - `giris` endpoint'i ile kullanıcı girişi yaparak JWT token alın
-   - Aldığınız token'ı diğer isteklerde Bearer Token olarak kullanın
-   - `get all user` endpoint'i ile kullanıcı listesini görüntüleyin
-   - `getUser by id` endpoint'i ile belirli bir kullanıcıyı ID ile alın
-   - `update user` endpoint'i ile kullanıcı bilgilerini güncelleyin
-
-2. **Gönderi İşlemleri**:
-   - `create post` endpoint'i ile yeni bir gönderi oluşturun (token gereklidir)
-   - `all posts` endpoint'i ile tüm gönderileri listeleyin
-   - `get list by user` endpoint'i ile belirli bir kullanıcıya ait gönderileri alın
-   - `get list by tag` endpoint'i ile etiketlere göre filtreleme yapın
-   - `update post` endpoint'i ile gönderi güncelleyin (sadece gönderi sahibi)
-   - `delete post` endpoint'i ile gönderi silin (sadece gönderi sahibi)
-
-### Önemli Notlar
-
-- Kimlik doğrulaması gerektiren endpointler için, önce login işlemi yapıp token almanız gerekir
-- Aldığınız token'ı "Authorization" sekmesindeki "Bearer Token" alanına girmelisiniz
-- Test verilerinizi kendi ortamınıza göre değiştirmeniz gerekebilir (örneğin: kullanıcı ID'leri)
+---
 
 ## 📄 Lisans
 
-Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakın.
+Bu proje MIT Lisansı ile lisanslanmıştır. Ayrıntılar için `LICENSE` dosyasına göz atabilirsiniz.
+
+
