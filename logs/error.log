@@ -236,3 +236,54 @@
 2025-05-08 08:59:49 error: Validation error: [{"type":"field","msg":"Title is required","path":"title","location":"body"},{"type":"field","msg":"Title must be between 3 and 100 characters","path":"title","location":"body"},{"type":"field","msg":"Tags must be an array","path":"tags","location":"body"},{"type":"field","msg":"At least one tag is required","path":"tags","location":"body"}]
 2025-05-08 09:00:17 error: Error in deletePost: {"_index":"posts","_type":"_doc","_id":"681c6e7181bf74b6fd1a930d","_version":1,"result":"not_found","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}
 2025-05-08 09:00:17 error: Error deleting post 681c6e7181bf74b6fd1a930d: {"_index":"posts","_type":"_doc","_id":"681c6e7181bf74b6fd1a930d","_version":1,"result":"not_found","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}
+2025-05-08 10:37:39 error: Validation error: [{"type":"field","value":"a","msg":"Username must be between 3 and 30 characters","path":"username","location":"body"}]
+2025-05-08 11:01:33 error: Error in registerUser: This email already exists
+2025-05-08 11:01:33 error: Error registering user: This email already exists
+2025-05-08 11:02:05 error: Elasticsearch indexing error: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 11:03:25 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 error: Error syncing user 681c897f73084ac698cffde6 to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 error: Error syncing user 681c8f2d8b1ddd2b51758046 to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:10:16 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:11:00 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 14:11:45 error: MongoDB connection FAIL :( connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-05-08 14:13:04 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: 
+2025-05-08 14:13:17 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: 
+2025-05-08 14:13:32 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: 
+2025-05-08 14:13:44 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: 
+2025-05-08 14:13:56 error: Error syncing user 681c897f73084ac698cffde6 to Elasticsearch: 
+2025-05-08 14:14:10 error: Error syncing user 681c8f2d8b1ddd2b51758046 to Elasticsearch: 
+2025-05-08 11:16:24 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:17:06 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:17:59 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:18:43 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch

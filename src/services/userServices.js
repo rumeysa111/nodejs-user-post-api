@@ -48,7 +48,7 @@ const registerUser = async (username, email, password, role) => {
             await elasticClient.index({
                 index: "users",
                 id: newUser._id.toString(),
-                document: {
+                body: {
                     username,
                     email,
                     role: userRole,
@@ -166,8 +166,7 @@ const updateUser = async (userId, updateData) => {
             }
         });
         logger.info(`User updated in MongoDB and Elasticsearch: ${userId}`);
-        await redisClient.del(`user_${userId}`); // güncellenen kullanıcıyı redis cache'den sil	
-        await redisClient.del('all_users'); // tüm kullanıcıları redis cache'den sil
+    
 
 
         return updatedUser;

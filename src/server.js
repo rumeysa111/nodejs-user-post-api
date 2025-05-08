@@ -3,6 +3,9 @@ const mongoose = require("mongoose"); //mongodb bağlantısı için
 const cors = require("cors"); //farklı domainlerden gelen istekleri kabul etmek için
 const userRoutes = require('./routes/userRoutes');
 const postRoutes = require('./routes/postRoutes');
+const syncRoutes = require('./routes/syncRouter');
+const { startPostSyncCron,startUserSyncCron } = require("./services/sync_service");
+
 const logger = require('./utils/logger');
 
 const connectDB = require('./config/db');
@@ -25,6 +28,7 @@ app.get("/api", (req, res) => {
 });
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
+app.use("/api/sync", syncRoutes); //sync işlemleri için route
 // Hata işleme middleware
 app.use((err, req, res, next) => {
     logger.error(`Unhandled error: ${err.message}`);
@@ -33,4 +37,9 @@ app.use((err, req, res, next) => {
 const port = process.env.PORT || 3000; //port numarası
 app.listen(port, () => {
     logger.info(`Server is running on port ${port}`);
+    // cronu başlatıyoruz 
+    // Cron işlerini başlat
+    startUserSyncCron('0 */6 * * *'); // Her 6 saatte bir kullanıcıları senkronize et
+    startPostSyncCron('0 */3 * * *'); // Her 3 saatte bir gönderileri senkronize et
+    logger.info('Cron jobs for Elasticsearch synchronization have been started');
 });

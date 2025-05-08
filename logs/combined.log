@@ -899,3 +899,482 @@
 2025-05-08 09:00:17 error: Error deleting post 681c6e7181bf74b6fd1a930d: {"_index":"posts","_type":"_doc","_id":"681c6e7181bf74b6fd1a930d","_version":1,"result":"not_found","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1}
 2025-05-08 09:00:26 info: GET /api/posts/tag/spor
 2025-05-08 09:00:27 info: Retrieved 2 posts with tag spor
+2025-05-08 09:10:06 info: Server is running on port 3000
+2025-05-08 09:10:06 info: MongoDB connection SUCCESS :)
+2025-05-08 09:10:49 info: Server is running on port 3000
+2025-05-08 09:10:49 info: MongoDB connection SUCCESS :)
+2025-05-08 09:11:52 info: Server is running on port 3000
+2025-05-08 09:11:52 info: MongoDB connection SUCCESS :)
+2025-05-08 09:12:07 info: Server is running on port 3000
+2025-05-08 09:12:07 info: MongoDB connection SUCCESS :)
+2025-05-08 09:12:14 info: Server is running on port 3000
+2025-05-08 09:12:14 info: MongoDB connection SUCCESS :)
+2025-05-08 09:12:15 info: Server is running on port 3000
+2025-05-08 09:12:15 info: MongoDB connection SUCCESS :)
+2025-05-08 09:12:18 info: Server is running on port 3000
+2025-05-08 09:12:18 info: MongoDB connection SUCCESS :)
+2025-05-08 09:12:21 info: Server is running on port 3000
+2025-05-08 09:12:21 info: MongoDB connection SUCCESS :)
+2025-05-08 09:12:22 info: Server is running on port 3000
+2025-05-08 09:12:22 info: MongoDB connection SUCCESS :)
+2025-05-08 09:12:25 info: Server is running on port 3000
+2025-05-08 09:12:25 info: MongoDB connection SUCCESS :)
+2025-05-08 09:12:29 info: Server is running on port 3000
+2025-05-08 09:12:29 info: MongoDB connection SUCCESS :)
+2025-05-08 09:12:35 info: Server is running on port 3000
+2025-05-08 09:12:35 info: MongoDB connection SUCCESS :)
+2025-05-08 09:12:36 info: Server is running on port 3000
+2025-05-08 09:12:36 info: MongoDB connection SUCCESS :)
+2025-05-08 10:13:55 info: Server is running on port 3000
+2025-05-08 10:13:56 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:04 info: Server is running on port 3000
+2025-05-08 10:14:04 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:09 info: Server is running on port 3000
+2025-05-08 10:14:09 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:10 info: Server is running on port 3000
+2025-05-08 10:14:10 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:13 info: Server is running on port 3000
+2025-05-08 10:14:13 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:15 info: Server is running on port 3000
+2025-05-08 10:14:15 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:17 info: Server is running on port 3000
+2025-05-08 10:14:17 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:18 info: Server is running on port 3000
+2025-05-08 10:14:18 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:19 info: Server is running on port 3000
+2025-05-08 10:14:19 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:28 info: Server is running on port 3000
+2025-05-08 10:14:28 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:31 info: Server is running on port 3000
+2025-05-08 10:14:31 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:34 info: Server is running on port 3000
+2025-05-08 10:14:34 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:38 info: Server is running on port 3000
+2025-05-08 10:14:38 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:40 info: Server is running on port 3000
+2025-05-08 10:14:40 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:44 info: Server is running on port 3000
+2025-05-08 10:14:44 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:48 info: Server is running on port 3000
+2025-05-08 10:14:48 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:53 info: Server is running on port 3000
+2025-05-08 10:14:53 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:57 info: Server is running on port 3000
+2025-05-08 10:14:57 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:59 info: Server is running on port 3000
+2025-05-08 10:14:59 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:03 info: Server is running on port 3000
+2025-05-08 10:15:03 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:12 info: Server is running on port 3000
+2025-05-08 10:15:12 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:15 info: Server is running on port 3000
+2025-05-08 10:15:15 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:20 info: Server is running on port 3000
+2025-05-08 10:15:21 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:22 info: Server is running on port 3000
+2025-05-08 10:15:22 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:24 info: Server is running on port 3000
+2025-05-08 10:15:24 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:28 info: Server is running on port 3000
+2025-05-08 10:15:28 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:30 info: Server is running on port 3000
+2025-05-08 10:15:31 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:35 info: Server is running on port 3000
+2025-05-08 10:15:35 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:38 info: Server is running on port 3000
+2025-05-08 10:15:38 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:43 info: Server is running on port 3000
+2025-05-08 10:15:43 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:45 info: Server is running on port 3000
+2025-05-08 10:15:45 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:48 info: Server is running on port 3000
+2025-05-08 10:15:48 info: MongoDB connection SUCCESS :)
+2025-05-08 10:15:50 info: Server is running on port 3000
+2025-05-08 10:15:50 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:06 info: Server is running on port 3000
+2025-05-08 10:16:06 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:12 info: Server is running on port 3000
+2025-05-08 10:16:12 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:16 info: Server is running on port 3000
+2025-05-08 10:16:16 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:17 info: Server is running on port 3000
+2025-05-08 10:16:17 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:21 info: Server is running on port 3000
+2025-05-08 10:16:21 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:24 info: Server is running on port 3000
+2025-05-08 10:16:24 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:27 info: Server is running on port 3000
+2025-05-08 10:16:27 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:29 info: Server is running on port 3000
+2025-05-08 10:16:29 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:32 info: Server is running on port 3000
+2025-05-08 10:16:32 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:34 info: Server is running on port 3000
+2025-05-08 10:16:34 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:35 info: Server is running on port 3000
+2025-05-08 10:16:35 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:38 info: Server is running on port 3000
+2025-05-08 10:16:38 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:39 info: Server is running on port 3000
+2025-05-08 10:16:39 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:46 info: Server is running on port 3000
+2025-05-08 10:16:46 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:56 info: Server is running on port 3000
+2025-05-08 10:16:56 info: MongoDB connection SUCCESS :)
+2025-05-08 10:16:59 info: Server is running on port 3000
+2025-05-08 10:16:59 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:01 info: Server is running on port 3000
+2025-05-08 10:17:01 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:04 info: Server is running on port 3000
+2025-05-08 10:17:04 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:09 info: Server is running on port 3000
+2025-05-08 10:17:09 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:14 info: Server is running on port 3000
+2025-05-08 10:17:14 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:15 info: Server is running on port 3000
+2025-05-08 10:17:15 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:18 info: Server is running on port 3000
+2025-05-08 10:17:18 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:27 info: Server is running on port 3000
+2025-05-08 10:17:27 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:35 info: Server is running on port 3000
+2025-05-08 10:17:35 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:36 info: Server is running on port 3000
+2025-05-08 10:17:36 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:49 info: Server is running on port 3000
+2025-05-08 10:17:49 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:53 info: Server is running on port 3000
+2025-05-08 10:17:53 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:54 info: Server is running on port 3000
+2025-05-08 10:17:54 info: MongoDB connection SUCCESS :)
+2025-05-08 10:17:56 info: Server is running on port 3000
+2025-05-08 10:17:56 info: MongoDB connection SUCCESS :)
+2025-05-08 10:18:09 info: Server is running on port 3000
+2025-05-08 10:18:09 info: MongoDB connection SUCCESS :)
+2025-05-08 10:18:12 info: Server is running on port 3000
+2025-05-08 10:18:12 info: MongoDB connection SUCCESS :)
+2025-05-08 10:18:18 info: Server is running on port 3000
+2025-05-08 10:18:18 info: MongoDB connection SUCCESS :)
+2025-05-08 10:18:20 info: Server is running on port 3000
+2025-05-08 10:18:20 info: MongoDB connection SUCCESS :)
+2025-05-08 10:18:26 info: Server is running on port 3000
+2025-05-08 10:18:26 info: MongoDB connection SUCCESS :)
+2025-05-08 10:18:29 info: Server is running on port 3000
+2025-05-08 10:18:29 info: MongoDB connection SUCCESS :)
+2025-05-08 10:19:02 info: Server is running on port 3000
+2025-05-08 10:19:02 info: MongoDB connection SUCCESS :)
+2025-05-08 10:19:09 info: Server is running on port 3000
+2025-05-08 10:19:10 info: MongoDB connection SUCCESS :)
+2025-05-08 10:19:14 info: Server is running on port 3000
+2025-05-08 10:19:14 info: MongoDB connection SUCCESS :)
+2025-05-08 10:19:15 info: Server is running on port 3000
+2025-05-08 10:19:15 info: MongoDB connection SUCCESS :)
+2025-05-08 10:19:19 info: Server is running on port 3000
+2025-05-08 10:19:19 info: MongoDB connection SUCCESS :)
+2025-05-08 10:19:21 info: Server is running on port 3000
+2025-05-08 10:19:21 info: MongoDB connection SUCCESS :)
+2025-05-08 10:19:23 info: Server is running on port 3000
+2025-05-08 10:19:23 info: MongoDB connection SUCCESS :)
+2025-05-08 10:19:41 info: Server is running on port 3000
+2025-05-08 10:19:41 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:09 info: Server is running on port 3000
+2025-05-08 10:20:09 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:11 info: Server is running on port 3000
+2025-05-08 10:20:11 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:32 info: Server is running on port 3000
+2025-05-08 10:20:32 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:33 info: Server is running on port 3000
+2025-05-08 10:20:33 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:38 info: Server is running on port 3000
+2025-05-08 10:20:38 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:40 info: Server is running on port 3000
+2025-05-08 10:20:40 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:41 info: Server is running on port 3000
+2025-05-08 10:20:41 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:45 info: Server is running on port 3000
+2025-05-08 10:20:45 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:49 info: Server is running on port 3000
+2025-05-08 10:20:49 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:53 info: Server is running on port 3000
+2025-05-08 10:20:53 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:58 info: Server is running on port 3000
+2025-05-08 10:20:58 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:02 info: Server is running on port 3000
+2025-05-08 10:21:02 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:07 info: Server is running on port 3000
+2025-05-08 10:21:07 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:09 info: Server is running on port 3000
+2025-05-08 10:21:09 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:12 info: Server is running on port 3000
+2025-05-08 10:21:12 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:13 info: Server is running on port 3000
+2025-05-08 10:21:13 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:16 info: Server is running on port 3000
+2025-05-08 10:21:16 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:19 info: Server is running on port 3000
+2025-05-08 10:21:19 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:24 info: Server is running on port 3000
+2025-05-08 10:21:24 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:28 info: Server is running on port 3000
+2025-05-08 10:21:28 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:33 info: Server is running on port 3000
+2025-05-08 10:21:33 info: MongoDB connection SUCCESS :)
+2025-05-08 10:21:36 info: Server is running on port 3000
+2025-05-08 10:21:36 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:01 info: Server is running on port 3000
+2025-05-08 10:22:01 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:07 info: Server is running on port 3000
+2025-05-08 10:22:07 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:12 info: Server is running on port 3000
+2025-05-08 10:22:12 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:14 info: Server is running on port 3000
+2025-05-08 10:22:14 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:15 info: Server is running on port 3000
+2025-05-08 10:22:15 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:17 info: Server is running on port 3000
+2025-05-08 10:22:17 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:28 info: Server is running on port 3000
+2025-05-08 10:22:28 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:30 info: Server is running on port 3000
+2025-05-08 10:22:30 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:37 info: Server is running on port 3000
+2025-05-08 10:22:37 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:39 info: Server is running on port 3000
+2025-05-08 10:22:39 info: MongoDB connection SUCCESS :)
+2025-05-08 10:22:42 info: Server is running on port 3000
+2025-05-08 10:22:42 info: MongoDB connection SUCCESS :)
+2025-05-08 10:23:02 info: Server is running on port 3000
+2025-05-08 10:23:02 info: MongoDB connection SUCCESS :)
+2025-05-08 10:23:08 info: Server is running on port 3000
+2025-05-08 10:23:08 info: MongoDB connection SUCCESS :)
+2025-05-08 10:23:12 info: Server is running on port 3000
+2025-05-08 10:23:12 info: MongoDB connection SUCCESS :)
+2025-05-08 10:23:14 info: Server is running on port 3000
+2025-05-08 10:23:14 info: MongoDB connection SUCCESS :)
+2025-05-08 10:23:16 info: Server is running on port 3000
+2025-05-08 10:23:16 info: MongoDB connection SUCCESS :)
+2025-05-08 10:23:27 info: Server is running on port 3000
+2025-05-08 10:23:27 info: MongoDB connection SUCCESS :)
+2025-05-08 10:23:31 info: Server is running on port 3000
+2025-05-08 10:23:31 info: MongoDB connection SUCCESS :)
+2025-05-08 10:23:38 info: Server is running on port 3000
+2025-05-08 10:23:38 info: MongoDB connection SUCCESS :)
+2025-05-08 10:23:57 info: Server is running on port 3000
+2025-05-08 10:23:57 info: MongoDB connection SUCCESS :)
+2025-05-08 10:24:03 info: Server is running on port 3000
+2025-05-08 10:24:03 info: MongoDB connection SUCCESS :)
+2025-05-08 10:24:13 info: Server is running on port 3000
+2025-05-08 10:24:13 info: MongoDB connection SUCCESS :)
+2025-05-08 10:24:37 info: Server is running on port 3000
+2025-05-08 10:24:37 info: MongoDB connection SUCCESS :)
+2025-05-08 10:26:52 info: Server is running on port 3000
+2025-05-08 10:26:52 info: MongoDB connection SUCCESS :)
+2025-05-08 13:26:53 info: Server is running on port 3000
+2025-05-08 13:26:53 info: MongoDB connection SUCCESS :)
+2025-05-08 10:28:33 info: POST /api/users/login
+2025-05-08 10:28:33 info: Login successful for user: 681c5834cba2b385590c3c59
+2025-05-08 10:28:33 info: User logged in: 681c5834cba2b385590c3c59
+2025-05-08 10:29:05 info: POST /api/sync/users
+2025-05-08 10:29:12 info: POST /api/users/login
+2025-05-08 10:29:12 info: Login successful for user: 681c5834cba2b385590c3c59
+2025-05-08 10:29:12 info: User logged in: 681c5834cba2b385590c3c59
+2025-05-08 10:29:23 info: POST /api/sync/users
+2025-05-08 10:29:23 info: starting sync all users
+2025-05-08 10:29:24 info: user sync completed {synced: ${syncedCount}, errors: ${errorCount}
+2025-05-08 10:29:24 info: user synchronizatin completed {result.synced} users synced, ${result.errors} errors
+2025-05-08 10:30:53 info: POST /api/sync/posts
+2025-05-08 10:30:53 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 10:30:53 info: Post synchronization completed: 2 posts synced, 0 failed
+2025-05-08 10:30:53 info: post synchronizatin completed {result.synced} posts synced, ${result.errors} errors
+2025-05-08 10:33:21 info: GET /api/users
+2025-05-08 10:33:21 info: Retrieved 4 users
+2025-05-08 10:34:24 info: GET /api/posts
+2025-05-08 10:34:24 info: Retrieved 2 posts
+2025-05-08 10:37:39 info: POST /api/users/register
+2025-05-08 10:37:39 error: Validation error: [{"type":"field","value":"a","msg":"Username must be between 3 and 30 characters","path":"username","location":"body"}]
+2025-05-08 10:37:51 info: POST /api/users/register
+2025-05-08 10:37:51 info: New user registered successfully: asdfg, a@gmail.com, user
+2025-05-08 10:37:51 info: User registered: 681c897f73084ac698cffde6
+2025-05-08 10:40:05 info: Server is running on port 3000
+2025-05-08 10:40:05 info: MongoDB connection SUCCESS :)
+2025-05-08 10:42:42 info: Server is running on port 3000
+2025-05-08 10:42:42 info: MongoDB connection SUCCESS :)
+2025-05-08 10:42:44 info: Server is running on port 3000
+2025-05-08 10:42:44 info: MongoDB connection SUCCESS :)
+2025-05-08 10:43:01 info: Server is running on port 3000
+2025-05-08 10:43:01 info: MongoDB connection SUCCESS :)
+2025-05-08 10:45:31 info: Server is running on port 3000
+2025-05-08 10:45:32 info: MongoDB connection SUCCESS :)
+2025-05-08 10:45:50 info: Server is running on port 3000
+2025-05-08 10:45:50 info: MongoDB connection SUCCESS :)
+2025-05-08 13:53:43 info: Server is running on port 3000
+2025-05-08 13:53:43 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 13:53:43 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 13:53:43 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 13:53:43 info: MongoDB connection SUCCESS :)
+2025-05-08 13:55:33 info: Server is running on port 3000
+2025-05-08 13:55:33 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 13:55:33 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 13:55:33 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 13:55:33 info: MongoDB connection SUCCESS :)
+2025-05-08 13:56:13 info: Server is running on port 3000
+2025-05-08 13:56:13 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 13:56:13 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 13:56:13 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 13:56:13 info: MongoDB connection SUCCESS :)
+2025-05-08 13:59:07 info: Server is running on port 3000
+2025-05-08 13:59:07 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 13:59:07 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 13:59:07 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 13:59:07 info: MongoDB connection SUCCESS :)
+2025-05-08 11:01:19 info: Server is running on port 3000
+2025-05-08 11:01:19 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:01:19 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:01:19 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:01:19 info: MongoDB connection SUCCESS :)
+2025-05-08 11:01:33 info: POST /api/users/register
+2025-05-08 11:01:33 warn: Registration failed: Email already exists: a@gmail.com
+2025-05-08 11:01:33 error: Error in registerUser: This email already exists
+2025-05-08 11:01:33 error: Error registering user: This email already exists
+2025-05-08 11:01:46 info: GET /api/users
+2025-05-08 11:01:46 info: Retrieved 5 users
+2025-05-08 11:02:05 info: POST /api/users/register
+2025-05-08 11:02:05 error: Elasticsearch indexing error: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 11:02:05 info: New user registered successfully: asdfııg, a@gmaiııl.com, user
+2025-05-08 11:02:05 info: User registered: 681c8f2d8b1ddd2b51758046
+2025-05-08 11:02:29 info: Server is running on port 3000
+2025-05-08 11:02:29 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:02:29 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:02:29 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:02:29 info: MongoDB connection SUCCESS :)
+2025-05-08 14:02:33 info: Server is running on port 3000
+2025-05-08 14:02:33 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 14:02:33 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 14:02:33 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 14:02:33 info: MongoDB connection SUCCESS :)
+2025-05-08 11:03:25 info: POST /api/sync/users
+2025-05-08 11:03:25 info: starting sync all users
+2025-05-08 11:03:25 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 error: Error syncing user 681c897f73084ac698cffde6 to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 error: Error syncing user 681c8f2d8b1ddd2b51758046 to Elasticsearch: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 11:03:25 info: user sync completed {synced: ${syncedCount}, errors: ${errorCount}
+2025-05-08 11:03:25 info: user synchronizatin completed {result.synced} users synced, ${result.errors} errors
+2025-05-08 11:08:08 info: Server is running on port 3000
+2025-05-08 11:08:08 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:08:08 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:08:08 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:08:08 info: MongoDB connection SUCCESS :)
+2025-05-08 11:08:35 info: Server is running on port 3000
+2025-05-08 11:08:35 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:08:35 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:08:35 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:08:35 info: MongoDB connection SUCCESS :)
+2025-05-08 11:09:21 info: Server is running on port 3000
+2025-05-08 11:09:21 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:09:21 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:09:21 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:09:21 info: MongoDB connection SUCCESS :)
+2025-05-08 11:09:40 info: POST /api/sync/users
+2025-05-08 11:09:40 info: starting sync all users
+2025-05-08 11:10:16 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:10:43 info: POST /api/sync/users
+2025-05-08 11:10:43 info: starting sync all users
+2025-05-08 11:11:00 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 14:11:15 info: Server is running on port 3000
+2025-05-08 14:11:15 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 14:11:15 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 14:11:15 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 14:11:31 info: POST /api/sync/users
+2025-05-08 14:11:45 error: MongoDB connection FAIL :( connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-05-08 14:11:58 info: Server is running on port 3000
+2025-05-08 14:11:58 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 14:11:58 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 14:11:58 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 14:12:12 info: MongoDB connection SUCCESS :)
+2025-05-08 14:12:34 info: Server is running on port 3000
+2025-05-08 14:12:34 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 14:12:34 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 14:12:34 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 14:12:34 info: MongoDB connection SUCCESS :)
+2025-05-08 14:12:50 info: POST /api/sync/users
+2025-05-08 14:12:50 info: starting sync all users
+2025-05-08 14:13:04 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: 
+2025-05-08 14:13:17 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: 
+2025-05-08 14:13:32 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: 
+2025-05-08 14:13:44 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: 
+2025-05-08 14:13:56 error: Error syncing user 681c897f73084ac698cffde6 to Elasticsearch: 
+2025-05-08 14:14:10 error: Error syncing user 681c8f2d8b1ddd2b51758046 to Elasticsearch: 
+2025-05-08 14:14:10 info: user sync completed: 0 synced, 6 errors
+2025-05-08 14:14:10 info: User synchronization completed: 0 users synced, 6 errors
+2025-05-08 14:14:10 info: Post synchronization completed: undefined posts synced, undefined errors
+2025-05-08 11:14:55 info: Server is running on port 3000
+2025-05-08 11:14:55 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:14:55 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:14:55 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:14:55 info: MongoDB connection SUCCESS :)
+2025-05-08 11:15:18 info: POST /api/users/login
+2025-05-08 11:15:18 info: Login successful for user: 681c5834cba2b385590c3c59
+2025-05-08 11:15:18 info: User logged in: 681c5834cba2b385590c3c59
+2025-05-08 11:15:42 info: POST /api/sync/users
+2025-05-08 11:15:42 info: starting sync all users
+2025-05-08 11:16:24 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:17:06 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:17:59 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:18:43 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:19:29 info: Server is running on port 3000
+2025-05-08 11:19:29 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:19:29 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:19:29 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:19:29 info: MongoDB connection SUCCESS :)
+2025-05-08 14:20:01 info: Server is running on port 3000
+2025-05-08 14:20:01 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 14:20:01 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 14:20:01 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:20:31 info: Server is running on port 3000
+2025-05-08 11:20:31 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:20:31 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:20:31 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:20:31 info: MongoDB connection SUCCESS :)
+2025-05-08 14:20:37 info: Server is running on port 3000
+2025-05-08 14:20:37 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 14:20:37 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 14:20:37 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 14:20:37 info: MongoDB connection SUCCESS :)
+2025-05-08 11:20:54 info: POST /api/sync/users
+2025-05-08 11:20:54 info: starting sync all users
+2025-05-08 11:21:36 info: Server is running on port 3000
+2025-05-08 11:21:36 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:21:36 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:21:36 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:21:36 info: MongoDB connection SUCCESS :)
