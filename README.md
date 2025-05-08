@@ -1,7 +1,3 @@
-
----
-
-````markdown
 # 🧩 Node.js REST API with MongoDB, Docker & Elasticsearch
 
 Bu proje; **Node.js**, **Express**, **MongoDB**, **Docker** ve **Elasticsearch** kullanarak geliştirilmiş kapsamlı bir **blog gönderisi ve kullanıcı yönetimi API'sidir**. Kullanıcı kaydı, JWT tabanlı kimlik doğrulama, gönderi yönetimi, veri doğrulama, loglama ve Elasticsearch senkronizasyonu gibi modern backend bileşenlerini içerir.
@@ -13,7 +9,7 @@ Bu proje; **Node.js**, **Express**, **MongoDB**, **Docker** ve **Elasticsearch**
 | Özellik               | Açıklama                                                                 |
 |-----------------------|---------------------------------------------------------------------------|
 | **Kullanıcı Yönetimi** | Kayıt, JWT ile oturum açma, kullanıcı profillerini görüntüleme/güncelleme/silme |
-| **Gönderi Yönetimi**  | CRUD işlemleri, kullanıcı ve etiket bazlı filtreleme
+| **Gönderi Yönetimi**  | CRUD işlemleri, kullanıcı ve etiket bazlı filtreleme, yetkilendirme kontrolleri |
 | **Veri Doğrulama**    | `express-validator` ile giriş doğrulama ve hata standardizasyonu |
 | **Loglama**           | `winston` ile detaylı dosya ve konsol logları |
 | **Docker Desteği**    | Docker Compose ile konteynerleştirilmiş yapı |
@@ -61,7 +57,7 @@ git clone https://github.com/rumeysa111/nodejs-user-post-api.git
 
 # 2. Docker konteynerlerini başlatın
 docker-compose up
-````
+
 
 * Uygulama: [http://localhost:3000](http://localhost:3000)
 * Kibana: [http://localhost:5601](http://localhost:5601)
