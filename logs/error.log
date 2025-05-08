@@ -41,3 +41,150 @@
 2025-05-06 21:37:12 error: MongoDB connection FAIL :( getaddrinfo ENOTFOUND mongo_db
 2025-05-06 21:42:09 error: Error in registerUser: elasticClient is not defined
 2025-05-06 21:42:09 error: Error registering user: elasticClient is not defined
+2025-05-08 06:19:04 error: Error in registerUser: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 06:19:04 error: Error registering user: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 06:23:46 error: Error in registerUser: This email already exists
+2025-05-08 06:23:46 error: Error registering user: This email already exists
+2025-05-08 06:23:54 error: Error in registerUser: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:23:54 error: Error registering user: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:27:40 error: Error in registerUser: This email already exists
+2025-05-08 06:27:40 error: Error registering user: This email already exists
+2025-05-08 06:27:57 error: Error in registerUser: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:27:57 error: Error registering user: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:28:03 error: Error in registerUser: This email already exists
+2025-05-08 06:28:03 error: Error registering user: This email already exists
+2025-05-08 06:28:07 error: Error in registerUser: This email already exists
+2025-05-08 06:28:07 error: Error registering user: This email already exists
+2025-05-08 06:28:11 error: Error in registerUser: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:28:11 error: Error registering user: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:31 error: Error in createPost: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:31 error: Error creating post: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:35 error: Error in createPost: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:35 error: Error creating post: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:36 error: Error in createPost: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:36 error: Error creating post: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:35:18 error: Error in registerUser: Missing required parameter: body
+2025-05-08 06:35:18 error: Error registering user: Missing required parameter: body
+2025-05-08 06:35:27 error: Error in registerUser: This email already exists
+2025-05-08 06:35:27 error: Error registering user: This email already exists
+2025-05-08 06:37:06 error: Error in registerUser: This email already exists
+2025-05-08 06:37:06 error: Error registering user: This email already exists
+2025-05-08 06:37:17 error: Error in registerUser: Missing required parameter: body
+2025-05-08 06:37:17 error: Error registering user: Missing required parameter: body
+2025-05-08 06:45:13 error: Error in registerUser: Missing required parameter: body
+2025-05-08 06:45:13 error: Error registering user: Missing required parameter: body
+2025-05-08 06:47:10 error: Error in registerUser: This email already exists
+2025-05-08 06:47:10 error: Error registering user: This email already exists
+2025-05-08 06:48:16 error: Error: User not found
+2025-05-08 06:48:16 error: Error logging in user: User not found
+2025-05-08 06:51:29 error: Error registering user: username is not defined
+2025-05-08 06:51:39 error: Error registering user: username is not defined
+2025-05-08 06:51:39 error: Error registering user: username is not defined
+2025-05-08 06:51:40 error: Error registering user: username is not defined
+2025-05-08 06:51:56 error: Error in registerUser: Missing required parameter: body
+2025-05-08 06:51:56 error: Error registering user: Missing required parameter: body
+2025-05-08 06:53:24 error: Error in registerUser: This email already exists
+2025-05-08 06:53:24 error: Error registering user: This email already exists
+2025-05-08 06:55:51 error: Error in registerUser: This email already exists
+2025-05-08 06:55:51 error: Error registering user: This email already exists
+2025-05-08 06:55:56 error: Error in registerUser: E11000 duplicate key error collection: nodejs-case.users index: username_1 dup key: { username: "rumeysa" }
+2025-05-08 06:55:56 error: Error registering user: E11000 duplicate key error collection: nodejs-case.users index: username_1 dup key: { username: "rumeysa" }
+2025-05-08 06:56:02 error: Error in registerUser: Missing required parameter: body
+2025-05-08 06:56:02 error: Error registering user: Missing required parameter: body
+2025-05-08 06:56:13 error: Error in registerUser: This email already exists
+2025-05-08 06:56:13 error: Error registering user: This email already exists
+2025-05-08 07:07:32 error: Elasticsearch indexing error: Missing required parameter: body
+2025-05-08 07:08:59 error: Error: User not found
+2025-05-08 07:08:59 error: Error updating user 67e0101092303314db102318: User not found
+2025-05-08 07:09:13 error: Error: User not found
+2025-05-08 07:09:13 error: Error updating user 67e0101092303314db102318: User not found
+2025-05-08 07:10:09 error: Error: User not found
+2025-05-08 07:10:09 error: Error updating user 67e0101092303314db102318: User not found
+2025-05-08 07:10:21 error: Error: User not found
+2025-05-08 07:10:21 error: Error updating user 67e0101092303314db102318: User not found
+2025-05-08 07:12:16 error: Error: Missing required parameter: body
+2025-05-08 07:12:16 error: Error updating user 681c5834cba2b385590c3c59: Missing required parameter: body
+2025-05-08 07:14:16 error: Error: Missing required parameter: body
+2025-05-08 07:14:16 error: Error updating user 681c5834cba2b385590c3c59: Missing required parameter: body
+2025-05-08 07:14:18 error: Error: Missing required parameter: body
+2025-05-08 07:14:18 error: Error updating user 681c5834cba2b385590c3c59: Missing required parameter: body
+2025-05-08 07:14:21 error: Error: Missing required parameter: body
+2025-05-08 07:14:21 error: Error updating user 681c5834cba2b385590c3c59: Missing required parameter: body
+2025-05-08 07:20:10 error: Error: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:20:10 error: Error updating user 681c5834cba2b385590c3c59: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:20:18 error: Error: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:20:18 error: Error updating user 681c5834cba2b385590c3c59: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:20:58 error: Error: This email already exists
+2025-05-08 07:20:58 error: Error updating user 681c5b3cc52ee660d58a796d: This email already exists
+2025-05-08 07:21:03 error: Error: This username already exists
+2025-05-08 07:21:03 error: Error updating user 681c5b3cc52ee660d58a796d: This username already exists
+2025-05-08 07:21:07 error: Error: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:21:07 error: Error updating user 681c5b3cc52ee660d58a796d: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:23:35 error: Error: Missing required parameter: body
+2025-05-08 07:23:35 error: Error updating user 681c5b3cc52ee660d58a796d: Missing required parameter: body
+2025-05-08 07:23:41 error: Error: Missing required parameter: body
+2025-05-08 07:23:41 error: Error updating user 681c5b3cc52ee660d58a796d: Missing required parameter: body
+2025-05-08 07:25:29 error: Error: index_not_found_exception: [index_not_found_exception] Reason: no such index [posts]
+2025-05-08 07:25:29 error: Error deleting user 681c5b3cc52ee660d58a796d: index_not_found_exception: [index_not_found_exception] Reason: no such index [posts]
+2025-05-08 07:27:27 error: Error: parsing_exception: [parsing_exception] Reason: Unknown key for a START_OBJECT in [doc].
+2025-05-08 07:27:27 error: Error deleting user 681c5ca233cc9bd782324ddb: parsing_exception: [parsing_exception] Reason: Unknown key for a START_OBJECT in [doc].
+2025-05-08 07:31:48 error: Error: index_not_found_exception: [index_not_found_exception] Reason: no such index [posts]
+2025-05-08 07:31:48 error: Error deleting user 681c5dbdbe490766aa16ec33: index_not_found_exception: [index_not_found_exception] Reason: no such index [posts]
+2025-05-08 07:32:06 error: Error: User not found
+2025-05-08 07:32:06 error: Error retrieving user 681c5dbdbe490766aa16ec33: User not found

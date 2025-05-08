@@ -321,3 +321,430 @@
 2025-05-06 21:42:09 info: POST /api/users/register
 2025-05-06 21:42:09 error: Error in registerUser: elasticClient is not defined
 2025-05-06 21:42:09 error: Error registering user: elasticClient is not defined
+2025-05-08 06:18:07 info: Server is running on port 3000
+2025-05-08 06:18:07 info: MongoDB connection SUCCESS :)
+2025-05-08 09:18:12 info: Server is running on port 3000
+2025-05-08 09:18:12 info: MongoDB connection SUCCESS :)
+2025-05-08 06:19:04 info: POST /api/users/register
+2025-05-08 06:19:04 error: Error in registerUser: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 06:19:04 error: Error registering user: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Content-Type, Accept]
+2025-05-08 06:21:06 info: Server is running on port 3000
+2025-05-08 06:21:06 info: MongoDB connection SUCCESS :)
+2025-05-08 06:22:03 info: Server is running on port 3000
+2025-05-08 06:22:03 info: MongoDB connection SUCCESS :)
+2025-05-08 06:22:18 info: Server is running on port 3000
+2025-05-08 06:22:18 info: MongoDB connection SUCCESS :)
+2025-05-08 06:22:22 info: Server is running on port 3000
+2025-05-08 06:22:22 info: MongoDB connection SUCCESS :)
+2025-05-08 06:22:26 info: Server is running on port 3000
+2025-05-08 06:22:26 info: MongoDB connection SUCCESS :)
+2025-05-08 06:22:31 info: Server is running on port 3000
+2025-05-08 06:22:31 info: MongoDB connection SUCCESS :)
+2025-05-08 06:22:34 info: Server is running on port 3000
+2025-05-08 06:22:34 info: MongoDB connection SUCCESS :)
+2025-05-08 06:23:23 info: Server is running on port 3000
+2025-05-08 06:23:23 info: MongoDB connection SUCCESS :)
+2025-05-08 09:23:32 info: Server is running on port 3000
+2025-05-08 09:23:32 info: MongoDB connection SUCCESS :)
+2025-05-08 06:23:46 info: POST /api/users/register
+2025-05-08 06:23:46 error: Error in registerUser: This email already exists
+2025-05-08 06:23:46 error: Error registering user: This email already exists
+2025-05-08 06:23:54 info: POST /api/users/register
+2025-05-08 06:23:54 error: Error in registerUser: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:23:54 error: Error registering user: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:27:04 info: Server is running on port 3000
+2025-05-08 06:27:04 info: MongoDB connection SUCCESS :)
+2025-05-08 06:27:07 info: Server is running on port 3000
+2025-05-08 06:27:07 info: MongoDB connection SUCCESS :)
+2025-05-08 09:27:10 info: Server is running on port 3000
+2025-05-08 09:27:10 info: MongoDB connection SUCCESS :)
+2025-05-08 06:27:36 info: Server is running on port 3000
+2025-05-08 06:27:36 info: MongoDB connection SUCCESS :)
+2025-05-08 06:27:40 info: POST /api/users/register
+2025-05-08 06:27:40 error: Error in registerUser: This email already exists
+2025-05-08 06:27:40 error: Error registering user: This email already exists
+2025-05-08 06:27:45 info: POST /api/users/register
+2025-05-08 06:27:57 error: Error in registerUser: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:27:57 error: Error registering user: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 09:28:00 info: Server is running on port 3000
+2025-05-08 09:28:00 info: MongoDB connection SUCCESS :)
+2025-05-08 06:28:03 info: POST /api/users/register
+2025-05-08 06:28:03 error: Error in registerUser: This email already exists
+2025-05-08 06:28:03 error: Error registering user: This email already exists
+2025-05-08 06:28:07 info: POST /api/users/register
+2025-05-08 06:28:07 error: Error in registerUser: This email already exists
+2025-05-08 06:28:07 error: Error registering user: This email already exists
+2025-05-08 06:28:11 info: POST /api/users/register
+2025-05-08 06:28:11 error: Error in registerUser: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:28:11 error: Error registering user: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:07 info: POST /api/users/login
+2025-05-08 06:29:07 info: Login successful for user: 681c4cd85f5a534b840bad3d
+2025-05-08 06:29:07 info: User logged in: 681c4cd85f5a534b840bad3d
+2025-05-08 06:29:31 info: POST /api/posts/create
+2025-05-08 06:29:31 error: Error in createPost: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:31 error: Error creating post: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:35 info: POST /api/posts/create
+2025-05-08 06:29:35 error: Error in createPost: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:35 error: Error creating post: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:36 info: POST /api/posts/create
+2025-05-08 06:29:36 error: Error in createPost: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:29:36 error: Error creating post: media_type_header_exception
+	Caused by:
+		status_exception: Accept version must be either version 8 or 7, but found 9. Accept=application/vnd.elasticsearch+json; compatible-with=9
+	Root causes:
+		media_type_header_exception: Invalid media-type value on headers [Accept, Content-Type]
+2025-05-08 06:34:47 info: Server is running on port 3000
+2025-05-08 06:34:47 info: MongoDB connection SUCCESS :)
+2025-05-08 06:35:18 info: POST /api/users/register
+2025-05-08 06:35:18 error: Error in registerUser: Missing required parameter: body
+2025-05-08 06:35:18 error: Error registering user: Missing required parameter: body
+2025-05-08 06:35:27 info: POST /api/users/register
+2025-05-08 06:35:27 error: Error in registerUser: This email already exists
+2025-05-08 06:35:27 error: Error registering user: This email already exists
+2025-05-08 06:37:06 info: POST /api/users/register
+2025-05-08 06:37:06 error: Error in registerUser: This email already exists
+2025-05-08 06:37:06 error: Error registering user: This email already exists
+2025-05-08 06:37:17 info: POST /api/users/register
+2025-05-08 06:37:17 error: Error in registerUser: Missing required parameter: body
+2025-05-08 06:37:17 error: Error registering user: Missing required parameter: body
+2025-05-08 06:40:04 info: Server is running on port 3000
+2025-05-08 06:40:04 info: MongoDB connection SUCCESS :)
+2025-05-08 06:41:07 info: Server is running on port 3000
+2025-05-08 06:41:07 info: MongoDB connection SUCCESS :)
+2025-05-08 06:41:42 info: Server is running on port 3000
+2025-05-08 06:41:42 info: MongoDB connection SUCCESS :)
+2025-05-08 06:44:22 info: Server is running on port 3000
+2025-05-08 06:44:22 info: MongoDB connection SUCCESS :)
+2025-05-08 06:45:13 info: POST /api/users/register
+2025-05-08 06:45:13 error: Error in registerUser: Missing required parameter: body
+2025-05-08 06:45:13 error: Error registering user: Missing required parameter: body
+2025-05-08 06:45:51 info: Server is running on port 3000
+2025-05-08 06:45:51 info: MongoDB connection SUCCESS :)
+2025-05-08 06:45:52 info: Server is running on port 3000
+2025-05-08 06:45:52 info: MongoDB connection SUCCESS :)
+2025-05-08 06:47:10 info: POST /api/users/register
+2025-05-08 06:47:10 error: Error in registerUser: This email already exists
+2025-05-08 06:47:10 error: Error registering user: This email already exists
+2025-05-08 06:48:16 info: POST /api/users/login
+2025-05-08 06:48:16 warn: Login failed: User with email k@gmail.com not found
+2025-05-08 06:48:16 error: Error: User not found
+2025-05-08 06:48:16 error: Error logging in user: User not found
+2025-05-08 06:48:27 info: POST /api/users/login
+2025-05-08 06:48:27 info: Login successful for user: 681c52f9116a4e88d56f3d16
+2025-05-08 06:48:27 info: User logged in: 681c52f9116a4e88d56f3d16
+2025-05-08 06:50:32 info: Server is running on port 3000
+2025-05-08 06:50:32 info: MongoDB connection SUCCESS :)
+2025-05-08 06:50:35 info: Server is running on port 3000
+2025-05-08 06:50:35 info: MongoDB connection SUCCESS :)
+2025-05-08 06:50:41 info: Server is running on port 3000
+2025-05-08 06:50:41 info: MongoDB connection SUCCESS :)
+2025-05-08 06:50:45 info: Server is running on port 3000
+2025-05-08 06:50:45 info: MongoDB connection SUCCESS :)
+2025-05-08 06:51:06 info: Server is running on port 3000
+2025-05-08 06:51:06 info: MongoDB connection SUCCESS :)
+2025-05-08 09:51:12 info: Server is running on port 3000
+2025-05-08 09:51:12 info: MongoDB connection SUCCESS :)
+2025-05-08 06:51:29 info: POST /api/users/register
+2025-05-08 06:51:29 error: Error registering user: username is not defined
+2025-05-08 06:51:39 info: POST /api/users/register
+2025-05-08 06:51:39 error: Error registering user: username is not defined
+2025-05-08 06:51:39 info: POST /api/users/register
+2025-05-08 06:51:39 error: Error registering user: username is not defined
+2025-05-08 06:51:40 info: POST /api/users/register
+2025-05-08 06:51:40 error: Error registering user: username is not defined
+2025-05-08 06:51:47 info: Server is running on port 3000
+2025-05-08 06:51:47 info: MongoDB connection SUCCESS :)
+2025-05-08 06:51:50 info: Server is running on port 3000
+2025-05-08 06:51:50 info: MongoDB connection SUCCESS :)
+2025-05-08 09:51:53 info: Server is running on port 3000
+2025-05-08 09:51:53 info: MongoDB connection SUCCESS :)
+2025-05-08 06:51:56 info: POST /api/users/register
+2025-05-08 06:51:56 error: Error in registerUser: Missing required parameter: body
+2025-05-08 06:51:56 error: Error registering user: Missing required parameter: body
+2025-05-08 06:53:24 info: POST /api/users/register
+2025-05-08 06:53:24 error: Error in registerUser: This email already exists
+2025-05-08 06:53:24 error: Error registering user: This email already exists
+2025-05-08 06:55:51 info: POST /api/users/register
+2025-05-08 06:55:51 error: Error in registerUser: This email already exists
+2025-05-08 06:55:51 error: Error registering user: This email already exists
+2025-05-08 06:55:56 info: POST /api/users/register
+2025-05-08 06:55:56 error: Error in registerUser: E11000 duplicate key error collection: nodejs-case.users index: username_1 dup key: { username: "rumeysa" }
+2025-05-08 06:55:56 error: Error registering user: E11000 duplicate key error collection: nodejs-case.users index: username_1 dup key: { username: "rumeysa" }
+2025-05-08 06:56:02 info: POST /api/users/register
+2025-05-08 06:56:02 error: Error in registerUser: Missing required parameter: body
+2025-05-08 06:56:02 error: Error registering user: Missing required parameter: body
+2025-05-08 06:56:13 info: POST /api/users/register
+2025-05-08 06:56:13 error: Error in registerUser: This email already exists
+2025-05-08 06:56:13 error: Error registering user: This email already exists
+2025-05-08 06:56:25 info: POST /api/users/login
+2025-05-08 06:56:25 info: Login successful for user: 681c5582cc008cb1bbf576ef
+2025-05-08 06:56:25 info: User logged in: 681c5582cc008cb1bbf576ef
+2025-05-08 07:02:19 info: Server is running on port 3000
+2025-05-08 07:02:19 info: MongoDB connection SUCCESS :)
+2025-05-08 07:02:22 info: Server is running on port 3000
+2025-05-08 07:02:22 info: MongoDB connection SUCCESS :)
+2025-05-08 07:02:26 info: Server is running on port 3000
+2025-05-08 07:02:26 info: MongoDB connection SUCCESS :)
+2025-05-08 07:02:37 info: Server is running on port 3000
+2025-05-08 07:02:37 info: MongoDB connection SUCCESS :)
+2025-05-08 07:02:39 info: Server is running on port 3000
+2025-05-08 07:02:39 info: MongoDB connection SUCCESS :)
+2025-05-08 07:02:40 info: Server is running on port 3000
+2025-05-08 07:02:40 info: MongoDB connection SUCCESS :)
+2025-05-08 07:02:55 info: Server is running on port 3000
+2025-05-08 07:02:55 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:01 info: Server is running on port 3000
+2025-05-08 07:03:01 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:02 info: Server is running on port 3000
+2025-05-08 07:03:02 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:05 info: Server is running on port 3000
+2025-05-08 07:03:05 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:07 info: Server is running on port 3000
+2025-05-08 07:03:07 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:10 info: Server is running on port 3000
+2025-05-08 07:03:10 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:13 info: Server is running on port 3000
+2025-05-08 07:03:13 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:17 info: Server is running on port 3000
+2025-05-08 07:03:17 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:27 info: Server is running on port 3000
+2025-05-08 07:03:27 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:37 info: Server is running on port 3000
+2025-05-08 07:03:37 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:47 info: Server is running on port 3000
+2025-05-08 07:03:47 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:49 info: Server is running on port 3000
+2025-05-08 07:03:49 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:50 info: Server is running on port 3000
+2025-05-08 07:03:50 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:52 info: Server is running on port 3000
+2025-05-08 07:03:52 info: MongoDB connection SUCCESS :)
+2025-05-08 07:03:54 info: Server is running on port 3000
+2025-05-08 07:03:54 info: MongoDB connection SUCCESS :)
+2025-05-08 07:04:04 info: Server is running on port 3000
+2025-05-08 07:04:04 info: MongoDB connection SUCCESS :)
+2025-05-08 07:04:20 info: Server is running on port 3000
+2025-05-08 07:04:20 info: MongoDB connection SUCCESS :)
+2025-05-08 07:04:23 info: Server is running on port 3000
+2025-05-08 07:04:23 info: MongoDB connection SUCCESS :)
+2025-05-08 07:04:34 info: Server is running on port 3000
+2025-05-08 07:04:34 info: MongoDB connection SUCCESS :)
+2025-05-08 07:04:35 info: Server is running on port 3000
+2025-05-08 07:04:35 info: MongoDB connection SUCCESS :)
+2025-05-08 07:04:37 info: Server is running on port 3000
+2025-05-08 07:04:38 info: MongoDB connection SUCCESS :)
+2025-05-08 07:04:42 info: Server is running on port 3000
+2025-05-08 07:04:42 info: MongoDB connection SUCCESS :)
+2025-05-08 07:05:00 info: Server is running on port 3000
+2025-05-08 07:05:00 info: MongoDB connection SUCCESS :)
+2025-05-08 07:05:06 info: Server is running on port 3000
+2025-05-08 07:05:06 info: MongoDB connection SUCCESS :)
+2025-05-08 07:05:12 info: Server is running on port 3000
+2025-05-08 07:05:12 info: MongoDB connection SUCCESS :)
+2025-05-08 07:05:15 info: Server is running on port 3000
+2025-05-08 07:05:15 info: MongoDB connection SUCCESS :)
+2025-05-08 07:05:20 info: Server is running on port 3000
+2025-05-08 07:05:20 info: MongoDB connection SUCCESS :)
+2025-05-08 07:05:29 info: Server is running on port 3000
+2025-05-08 07:05:29 info: MongoDB connection SUCCESS :)
+2025-05-08 07:05:34 info: Server is running on port 3000
+2025-05-08 07:05:34 info: MongoDB connection SUCCESS :)
+2025-05-08 07:05:55 info: Server is running on port 3000
+2025-05-08 07:05:55 info: MongoDB connection SUCCESS :)
+2025-05-08 07:06:56 info: Server is running on port 3000
+2025-05-08 07:06:56 info: MongoDB connection SUCCESS :)
+2025-05-08 07:07:15 info: Server is running on port 3000
+2025-05-08 07:07:15 info: MongoDB connection SUCCESS :)
+2025-05-08 10:07:18 info: Server is running on port 3000
+2025-05-08 10:07:18 info: MongoDB connection SUCCESS :)
+2025-05-08 07:07:32 info: POST /api/users/register
+2025-05-08 07:07:32 error: Elasticsearch indexing error: Missing required parameter: body
+2025-05-08 07:07:32 info: New user registered successfully: ruumeysa, r@gmail.com, user
+2025-05-08 07:07:32 info: User registered: 681c5834cba2b385590c3c59
+2025-05-08 07:07:49 info: POST /api/users/login
+2025-05-08 07:07:49 info: Login successful for user: 681c5834cba2b385590c3c59
+2025-05-08 07:07:49 info: User logged in: 681c5834cba2b385590c3c59
+2025-05-08 07:08:12 info: GET /api/users
+2025-05-08 07:08:12 info: Retrieved 1 users
+2025-05-08 07:08:46 info: POST /api/users/login
+2025-05-08 07:08:46 info: Login successful for user: 681c5834cba2b385590c3c59
+2025-05-08 07:08:46 info: User logged in: 681c5834cba2b385590c3c59
+2025-05-08 07:08:59 info: PUT /api/users/67e0101092303314db102318
+2025-05-08 07:08:59 error: Error: User not found
+2025-05-08 07:08:59 error: Error updating user 67e0101092303314db102318: User not found
+2025-05-08 07:09:13 info: PUT /api/users/67e0101092303314db102318
+2025-05-08 07:09:13 error: Error: User not found
+2025-05-08 07:09:13 error: Error updating user 67e0101092303314db102318: User not found
+2025-05-08 07:09:19 info: GET /api/users
+2025-05-08 07:09:19 info: Retrieved 1 users
+2025-05-08 07:10:09 info: PUT /api/users/67e0101092303314db102318
+2025-05-08 07:10:09 error: Error: User not found
+2025-05-08 07:10:09 error: Error updating user 67e0101092303314db102318: User not found
+2025-05-08 07:10:21 info: PUT /api/users/67e0101092303314db102318
+2025-05-08 07:10:21 error: Error: User not found
+2025-05-08 07:10:21 error: Error updating user 67e0101092303314db102318: User not found
+2025-05-08 07:12:16 info: PUT /api/users/681c5834cba2b385590c3c59
+2025-05-08 07:12:16 error: Error: Missing required parameter: body
+2025-05-08 07:12:16 error: Error updating user 681c5834cba2b385590c3c59: Missing required parameter: body
+2025-05-08 07:14:03 info: Server is running on port 3000
+2025-05-08 07:14:03 info: MongoDB connection SUCCESS :)
+2025-05-08 10:14:12 info: Server is running on port 3000
+2025-05-08 10:14:12 info: MongoDB connection SUCCESS :)
+2025-05-08 07:14:16 info: PUT /api/users/681c5834cba2b385590c3c59
+2025-05-08 07:14:16 error: Error: Missing required parameter: body
+2025-05-08 07:14:16 error: Error updating user 681c5834cba2b385590c3c59: Missing required parameter: body
+2025-05-08 07:14:18 info: PUT /api/users/681c5834cba2b385590c3c59
+2025-05-08 07:14:18 error: Error: Missing required parameter: body
+2025-05-08 07:14:18 error: Error updating user 681c5834cba2b385590c3c59: Missing required parameter: body
+2025-05-08 07:14:21 info: PUT /api/users/681c5834cba2b385590c3c59
+2025-05-08 07:14:21 error: Error: Missing required parameter: body
+2025-05-08 07:14:21 error: Error updating user 681c5834cba2b385590c3c59: Missing required parameter: body
+2025-05-08 07:19:46 info: Server is running on port 3000
+2025-05-08 07:19:46 info: MongoDB connection SUCCESS :)
+2025-05-08 07:19:57 info: Server is running on port 3000
+2025-05-08 07:19:57 info: MongoDB connection SUCCESS :)
+2025-05-08 10:20:06 info: Server is running on port 3000
+2025-05-08 10:20:06 info: MongoDB connection SUCCESS :)
+2025-05-08 07:20:10 info: PUT /api/users/681c5834cba2b385590c3c59
+2025-05-08 07:20:10 error: Error: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:20:10 error: Error updating user 681c5834cba2b385590c3c59: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:20:18 info: PUT /api/users/681c5834cba2b385590c3c59
+2025-05-08 07:20:18 error: Error: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:20:18 error: Error updating user 681c5834cba2b385590c3c59: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:20:28 info: POST /api/users/register
+2025-05-08 07:20:29 info: New user registered successfully: ruuumeysa, rr@gmail.com, user
+2025-05-08 07:20:29 info: User registered: 681c5b3cc52ee660d58a796d
+2025-05-08 07:20:58 info: PUT /api/users/681c5b3cc52ee660d58a796d
+2025-05-08 07:20:58 error: Error: This email already exists
+2025-05-08 07:20:58 error: Error updating user 681c5b3cc52ee660d58a796d: This email already exists
+2025-05-08 07:21:03 info: PUT /api/users/681c5b3cc52ee660d58a796d
+2025-05-08 07:21:03 error: Error: This username already exists
+2025-05-08 07:21:03 error: Error updating user 681c5b3cc52ee660d58a796d: This username already exists
+2025-05-08 07:21:07 info: PUT /api/users/681c5b3cc52ee660d58a796d
+2025-05-08 07:21:07 error: Error: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:21:07 error: Error updating user 681c5b3cc52ee660d58a796d: x_content_parse_exception: [x_content_parse_exception] Reason: [1:2] [UpdateRequest] unknown field [username]
+2025-05-08 07:23:02 info: Server is running on port 3000
+2025-05-08 07:23:02 info: MongoDB connection SUCCESS :)
+2025-05-08 10:23:29 info: Server is running on port 3000
+2025-05-08 10:23:29 info: MongoDB connection SUCCESS :)
+2025-05-08 07:23:35 info: PUT /api/users/681c5b3cc52ee660d58a796d
+2025-05-08 07:23:35 error: Error: Missing required parameter: body
+2025-05-08 07:23:35 error: Error updating user 681c5b3cc52ee660d58a796d: Missing required parameter: body
+2025-05-08 07:23:41 info: PUT /api/users/681c5b3cc52ee660d58a796d
+2025-05-08 07:23:41 error: Error: Missing required parameter: body
+2025-05-08 07:23:41 error: Error updating user 681c5b3cc52ee660d58a796d: Missing required parameter: body
+2025-05-08 07:24:03 info: Server is running on port 3000
+2025-05-08 07:24:03 info: MongoDB connection SUCCESS :)
+2025-05-08 10:24:08 info: Server is running on port 3000
+2025-05-08 10:24:08 info: MongoDB connection SUCCESS :)
+2025-05-08 07:24:12 info: PUT /api/users/681c5b3cc52ee660d58a796d
+2025-05-08 07:24:12 info: User updated in MongoDB and Elasticsearch: 681c5b3cc52ee660d58a796d
+2025-05-08 07:24:12 info: User updated: 681c5b3cc52ee660d58a796d
+2025-05-08 07:24:20 info: GET /api/users
+2025-05-08 07:24:20 info: Retrieved 2 users
+2025-05-08 07:25:20 info: POST /api/users/login
+2025-05-08 07:25:20 info: Login successful for user: 681c5b3cc52ee660d58a796d
+2025-05-08 07:25:20 info: User logged in: 681c5b3cc52ee660d58a796d
+2025-05-08 07:25:29 info: DELETE /api/users/681c5b3cc52ee660d58a796d
+2025-05-08 07:25:29 error: Error: index_not_found_exception: [index_not_found_exception] Reason: no such index [posts]
+2025-05-08 07:25:29 error: Error deleting user 681c5b3cc52ee660d58a796d: index_not_found_exception: [index_not_found_exception] Reason: no such index [posts]
+2025-05-08 07:25:42 info: Server is running on port 3000
+2025-05-08 07:25:42 info: MongoDB connection SUCCESS :)
+2025-05-08 07:25:54 info: Server is running on port 3000
+2025-05-08 07:25:54 info: MongoDB connection SUCCESS :)
+2025-05-08 07:25:57 info: Server is running on port 3000
+2025-05-08 07:25:58 info: MongoDB connection SUCCESS :)
+2025-05-08 10:26:00 info: Server is running on port 3000
+2025-05-08 10:26:00 info: MongoDB connection SUCCESS :)
+2025-05-08 07:26:07 info: DELETE /api/users/681c5b3cc52ee660d58a796d
+2025-05-08 07:26:19 info: GET /api/users
+2025-05-08 07:26:19 info: Retrieved 1 users
+2025-05-08 07:26:26 info: POST /api/users/register
+2025-05-08 07:26:26 info: New user registered successfully: ruuumeysa, rr@gmail.com, user
+2025-05-08 07:26:26 info: User registered: 681c5ca233cc9bd782324ddb
+2025-05-08 07:26:53 info: DELETE /api/users/681c5ca233cc9bd782324ddb
+2025-05-08 07:27:19 info: POST /api/users/login
+2025-05-08 07:27:19 info: Login successful for user: 681c5ca233cc9bd782324ddb
+2025-05-08 07:27:19 info: User logged in: 681c5ca233cc9bd782324ddb
+2025-05-08 07:27:27 info: DELETE /api/users/681c5ca233cc9bd782324ddb
+2025-05-08 07:27:27 error: Error: parsing_exception: [parsing_exception] Reason: Unknown key for a START_OBJECT in [doc].
+2025-05-08 07:27:27 error: Error deleting user 681c5ca233cc9bd782324ddb: parsing_exception: [parsing_exception] Reason: Unknown key for a START_OBJECT in [doc].
+2025-05-08 07:29:17 info: Server is running on port 3000
+2025-05-08 07:29:17 info: MongoDB connection SUCCESS :)
+2025-05-08 07:30:29 info: DELETE /api/users/681c5ca233cc9bd782324ddb
+2025-05-08 10:30:41 info: Server is running on port 3000
+2025-05-08 10:30:41 info: MongoDB connection SUCCESS :)
+2025-05-08 07:30:48 info: DELETE /api/users/681c5ca233cc9bd782324ddb
+2025-05-08 07:31:09 info: POST /api/users/register
+2025-05-08 07:31:09 info: New user registered successfully: ruuumeysa, rr@gmail.com, user
+2025-05-08 07:31:09 info: User registered: 681c5dbdbe490766aa16ec33
+2025-05-08 07:31:22 info: POST /api/users/login
+2025-05-08 07:31:22 info: Login successful for user: 681c5dbdbe490766aa16ec33
+2025-05-08 07:31:22 info: User logged in: 681c5dbdbe490766aa16ec33
+2025-05-08 07:31:48 info: DELETE /api/users/681c5dbdbe490766aa16ec33
+2025-05-08 07:31:48 error: Error: index_not_found_exception: [index_not_found_exception] Reason: no such index [posts]
+2025-05-08 07:31:48 error: Error deleting user 681c5dbdbe490766aa16ec33: index_not_found_exception: [index_not_found_exception] Reason: no such index [posts]
+2025-05-08 07:32:06 info: GET /api/users/681c5dbdbe490766aa16ec33
+2025-05-08 07:32:06 error: Error: User not found
+2025-05-08 07:32:06 error: Error retrieving user 681c5dbdbe490766aa16ec33: User not found
+2025-05-08 07:32:14 info: GET /api/users
+2025-05-08 07:32:14 info: Retrieved 1 users
+2025-05-08 07:32:25 info: GET /api/users/681c5834cba2b385590c3c59
+2025-05-08 07:32:25 info: Retrieved user: 681c5834cba2b385590c3c59
+2025-05-08 07:35:39 info: GET /api/users
+2025-05-08 07:35:39 info: Retrieved 1 users
+2025-05-08 07:37:59 info: POST /api/users/register
+2025-05-08 07:37:59 info: New user registered successfully: ruurumeysa, rrr@gmail.com, user
+2025-05-08 07:37:59 info: User registered: 681c5f57be490766aa16ec3e
