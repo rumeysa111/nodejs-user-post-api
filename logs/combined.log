@@ -1476,3 +1476,132 @@
 2025-05-08 11:55:02 info: user sync completed: 6 synced, 0 errors
 2025-05-08 11:55:02 info: User synchronization completed: 6 users synced, 0 errors
 2025-05-08 11:55:02 info: Post synchronization completed: undefined posts synced, undefined errors
+2025-05-08 12:00:00 info: Running scheduled user sync job
+2025-05-08 12:00:00 info: starting sync all users
+2025-05-08 12:00:00 info: Running scheduled post sync job
+2025-05-08 12:00:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:00:01 info: user sync completed: 6 synced, 0 errors
+2025-05-08 12:00:01 info: Scheduled user sync completed: 6 users synced, 0 errors
+2025-05-08 12:00:01 info: Post synchronization completed: 2 posts synced, 0 failed
+2025-05-08 12:00:01 info: Scheduled post sync completed: 2 posts synced, 0 errors
+2025-05-08 12:15:09 info: Server is running on port 3000
+2025-05-08 12:15:09 info: Starting user sync cron job with schedule: 0 */1 * * *
+2025-05-08 12:15:09 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 12:15:09 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 12:15:09 info: MongoDB connection SUCCESS :)
+2025-05-08 12:15:12 info: Server is running on port 3000
+2025-05-08 12:15:12 info: Starting user sync cron job with schedule: 0 */1 * * *
+2025-05-08 12:15:12 info: Starting post sync cron job with schedule: 0 */1 * * *
+2025-05-08 12:15:12 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 12:15:12 info: MongoDB connection SUCCESS :)
+2025-05-08 15:15:46 info: Server is running on port 3000
+2025-05-08 15:15:46 info: Starting user sync cron job with schedule: 0 */1 * * *
+2025-05-08 15:15:46 info: Starting post sync cron job with schedule: 0 */1 * * *
+2025-05-08 15:15:46 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 15:15:46 info: MongoDB connection SUCCESS :)
+2025-05-08 12:16:57 info: Server is running on port 3000
+2025-05-08 12:16:57 info: Starting user sync cron job with schedule: */1 * * * *
+2025-05-08 12:16:57 info: Starting post sync cron job with schedule: */1 * * * *
+2025-05-08 12:16:57 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 12:16:57 info: MongoDB connection SUCCESS :)
+2025-05-08 15:16:58 info: Server is running on port 3000
+2025-05-08 15:16:58 info: Starting user sync cron job with schedule: */1 * * * *
+2025-05-08 15:16:58 info: Starting post sync cron job with schedule: */1 * * * *
+2025-05-08 15:16:58 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 15:16:58 info: MongoDB connection SUCCESS :)
+2025-05-08 12:17:00 info: Running scheduled user sync job
+2025-05-08 12:17:00 info: starting sync all users
+2025-05-08 12:17:00 info: Running scheduled post sync job
+2025-05-08 12:17:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:17:00 info: Post synchronization completed: 2 posts synced, 0 failed
+2025-05-08 12:17:00 info: Scheduled post sync completed: 2 posts synced, 0 errors
+2025-05-08 12:17:00 info: user sync completed: 6 synced, 0 errors
+2025-05-08 12:17:00 info: Scheduled user sync completed: 6 users synced, 0 errors
+2025-05-08 15:17:00 info: Running scheduled user sync job
+2025-05-08 15:17:00 info: starting sync all users
+2025-05-08 15:17:00 info: Running scheduled post sync job
+2025-05-08 15:17:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:17:17 info: POST /api/posts/create
+2025-05-08 12:17:17 info: New post created: 681ca0cdd0a58a787f141909 by user 681c5834cba2b385590c3c59
+2025-05-08 12:17:17 info: Post created: {"message":"Post created","postId":"681ca0cdd0a58a787f141909"}
+2025-05-08 12:17:18 info: POST /api/posts/create
+2025-05-08 12:17:18 info: New post created: 681ca0ced0a58a787f14190d by user 681c5834cba2b385590c3c59
+2025-05-08 12:17:18 info: Post created: {"message":"Post created","postId":"681ca0ced0a58a787f14190d"}
+2025-05-08 12:17:49 info: POST /api/posts/create
+2025-05-08 12:17:49 info: New post created: 681ca0edd0a58a787f141911 by user 681c5834cba2b385590c3c59
+2025-05-08 12:17:49 info: Post created: {"message":"Post created","postId":"681ca0edd0a58a787f141911"}
+2025-05-08 12:17:50 info: POST /api/posts/create
+2025-05-08 12:17:50 info: New post created: 681ca0eed0a58a787f141915 by user 681c5834cba2b385590c3c59
+2025-05-08 12:17:50 info: Post created: {"message":"Post created","postId":"681ca0eed0a58a787f141915"}
+2025-05-08 12:18:00 info: Running scheduled user sync job
+2025-05-08 12:18:00 info: starting sync all users
+2025-05-08 12:18:00 info: Running scheduled post sync job
+2025-05-08 12:18:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:18:00 info: Post synchronization completed: 6 posts synced, 0 failed
+2025-05-08 12:18:00 info: Scheduled post sync completed: 6 posts synced, 0 errors
+2025-05-08 12:18:00 info: user sync completed: 6 synced, 0 errors
+2025-05-08 12:18:00 info: Scheduled user sync completed: 6 users synced, 0 errors
+2025-05-08 15:18:00 info: Running scheduled user sync job
+2025-05-08 15:18:00 info: starting sync all users
+2025-05-08 15:18:00 info: Running scheduled post sync job
+2025-05-08 15:18:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 15:18:17 error: Error syncing post 681c6f65ce7b17b16d421dcb: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 15:18:17 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 12:18:28 info: Server is running on port 3000
+2025-05-08 12:18:28 info: Starting user sync cron job with schedule: */1 * * * *
+2025-05-08 12:18:28 info: Starting post sync cron job with schedule: */1 * * * *
+2025-05-08 12:18:28 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 12:18:28 info: MongoDB connection SUCCESS :)
+2025-05-08 12:18:29 info: Server is running on port 3000
+2025-05-08 12:18:29 info: Starting user sync cron job with schedule: */1 * * * *
+2025-05-08 12:18:29 info: Starting post sync cron job with schedule: */1 * * * *
+2025-05-08 12:18:29 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 12:18:29 info: MongoDB connection SUCCESS :)
+2025-05-08 12:18:31 info: Server is running on port 3000
+2025-05-08 12:18:31 info: Starting user sync cron job with schedule: */1 * * * *
+2025-05-08 12:18:31 info: Starting post sync cron job with schedule: */1 * * * *
+2025-05-08 12:18:31 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 12:18:31 info: MongoDB connection SUCCESS :)
+2025-05-08 12:18:36 info: Server is running on port 3000
+2025-05-08 12:18:36 info: Starting user sync cron job with schedule: */1 * * * *
+2025-05-08 12:18:36 info: Starting post sync cron job with schedule: */1 * * * *
+2025-05-08 12:18:36 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 12:18:36 info: MongoDB connection SUCCESS :)
+2025-05-08 12:18:42 info: Server is running on port 3000
+2025-05-08 12:18:42 info: Starting user sync cron job with schedule: */1 * * * *
+2025-05-08 12:18:42 info: Starting post sync cron job with schedule: */1 * * * *
+2025-05-08 12:18:42 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 12:18:42 info: MongoDB connection SUCCESS :)
+2025-05-08 15:19:00 info: Running scheduled user sync job
+2025-05-08 15:19:00 info: starting sync all users
+2025-05-08 15:19:00 info: Running scheduled post sync job
+2025-05-08 15:19:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:19:00 info: Running scheduled user sync job
+2025-05-08 12:19:00 info: starting sync all users
+2025-05-08 12:19:00 info: Running scheduled post sync job
+2025-05-08 12:19:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:19:01 info: user sync completed: 6 synced, 0 errors
+2025-05-08 12:19:01 info: Scheduled user sync completed: 6 users synced, 0 errors
+2025-05-08 12:19:01 info: Post synchronization completed: 6 posts synced, 0 failed
+2025-05-08 12:19:01 info: Scheduled post sync completed: 6 posts synced, 0 errors
+2025-05-08 12:19:12 info: POST /api/users/register
+2025-05-08 12:19:12 info: New user registered successfully: asrrdfııg, arr@gmaiııl.com, user
+2025-05-08 12:19:12 info: User registered: 681ca140f4e8310415997139
+2025-05-08 15:19:15 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 15:19:16 error: Error syncing post 681c6f65ce7b17b16d421dcb: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 15:19:32 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 15:19:33 error: Error syncing post 681c6f70ce7b17b16d421dd1: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 15:19:33 info: Post synchronization completed: 0 posts synced, 2 failed
+2025-05-08 15:19:33 info: Scheduled post sync completed: 0 posts synced, 2 errors
+2025-05-08 15:20:00 info: Running scheduled user sync job
+2025-05-08 15:20:00 info: starting sync all users
+2025-05-08 15:20:00 info: Running scheduled post sync job
+2025-05-08 15:20:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:20:00 info: Running scheduled user sync job
+2025-05-08 12:20:00 info: starting sync all users
+2025-05-08 12:20:00 info: Running scheduled post sync job
+2025-05-08 12:20:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:20:01 info: Post synchronization completed: 6 posts synced, 0 failed
+2025-05-08 12:20:01 info: Scheduled post sync completed: 6 posts synced, 0 errors
+2025-05-08 12:20:01 info: user sync completed: 7 synced, 0 errors
+2025-05-08 12:20:01 info: Scheduled user sync completed: 7 users synced, 0 errors

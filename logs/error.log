@@ -297,3 +297,9 @@
 2025-05-08 11:46:45 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
 2025-05-08 11:47:32 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
 2025-05-08 11:48:16 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 15:18:17 error: Error syncing post 681c6f65ce7b17b16d421dcb: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 15:18:17 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 15:19:15 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 15:19:16 error: Error syncing post 681c6f65ce7b17b16d421dcb: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 15:19:32 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)
+2025-05-08 15:19:33 error: Error syncing post 681c6f70ce7b17b16d421dd1: Connect Timeout Error (attempted address: 172.20.0.2:9200, timeout: 10000ms)

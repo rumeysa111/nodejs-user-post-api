@@ -39,7 +39,7 @@ app.listen(port, () => {
     logger.info(`Server is running on port ${port}`);
     // cronu başlatıyoruz 
     // Cron işlerini başlat
-    startUserSyncCron('0 */6 * * *'); // Her 6 saatte bir kullanıcıları senkronize et
-    startPostSyncCron('0 */3 * * *'); // Her 3 saatte bir gönderileri senkronize et
+    startUserSyncCron('*/1 * * * *'); // Her dakikada kullanıcıları senkronize et
+    startPostSyncCron('*/1 * * * *'); // Her dakikda postları senkronize et
     logger.info('Cron jobs for Elasticsearch synchronization have been started');
 });
