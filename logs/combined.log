@@ -748,3 +748,47 @@
 2025-05-08 07:37:59 info: POST /api/users/register
 2025-05-08 07:37:59 info: New user registered successfully: ruurumeysa, rrr@gmail.com, user
 2025-05-08 07:37:59 info: User registered: 681c5f57be490766aa16ec3e
+2025-05-08 08:31:43 info: Server is running on port 3000
+2025-05-08 08:31:43 info: MongoDB connection SUCCESS :)
+2025-05-08 08:33:06 info: Server is running on port 3000
+2025-05-08 08:33:06 info: MongoDB connection SUCCESS :)
+2025-05-08 11:34:20 info: Server is running on port 3000
+2025-05-08 11:34:20 info: MongoDB connection SUCCESS :)
+2025-05-08 08:34:52 info: POST /api/users/register
+2025-05-08 08:34:52 warn: Registration failed: Email already exists: semiz@gmail.com
+2025-05-08 08:34:52 error: Error in registerUser: This email already exists
+2025-05-08 08:34:52 error: Error registering user: This email already exists
+2025-05-08 08:34:57 info: POST /api/users/register
+2025-05-08 08:34:57 error: Elasticsearch indexing error: Missing required parameter: body
+2025-05-08 08:34:57 info: New user registered successfully: semiuudz, semiyuz@gmail.com, user
+2025-05-08 08:34:57 info: User registered: 681c6cb181bf74b6fd1a92f9
+2025-05-08 08:35:01 info: DELETE /api/users/681c5dbdbe490766aa16ec33
+2025-05-08 08:35:06 info: PUT /api/users/681c5b3cc52ee660d58a796d
+2025-05-08 08:35:06 error: Error: User not found
+2025-05-08 08:35:06 error: Error updating user 681c5b3cc52ee660d58a796d: User not found
+2025-05-08 08:35:09 info: GET /api/users
+2025-05-08 08:35:09 info: Retrieved 4 users
+2025-05-08 08:35:19 info: POST /api/users/login
+2025-05-08 08:35:19 warn: Login failed: User with email rr@gmail.com not found
+2025-05-08 08:35:19 error: Error: User not found
+2025-05-08 08:35:19 error: Error logging in user: User not found
+2025-05-08 08:35:39 info: GET /api/users
+2025-05-08 08:35:39 info: Retrieved 4 users
+2025-05-08 08:35:44 info: PUT /api/users/681c5b3cc52ee660d58a796d
+2025-05-08 08:35:44 error: Error: User not found
+2025-05-08 08:35:44 error: Error updating user 681c5b3cc52ee660d58a796d: User not found
+2025-05-08 08:35:47 info: DELETE /api/users/681c5dbdbe490766aa16ec33
+2025-05-08 08:35:50 info: GET /api/users/681c5834cba2b385590c3c59
+2025-05-08 08:35:50 info: Retrieved user: 681c5834cba2b385590c3c59
+2025-05-08 08:35:53 info: POST /api/users/login
+2025-05-08 08:35:53 warn: Login failed: User with email rr@gmail.com not found
+2025-05-08 08:35:53 error: Error: User not found
+2025-05-08 08:35:53 error: Error logging in user: User not found
+2025-05-08 08:36:01 info: POST /api/users/register
+2025-05-08 08:36:01 warn: Registration failed: Email already exists: semiyuz@gmail.com
+2025-05-08 08:36:01 error: Error in registerUser: This email already exists
+2025-05-08 08:36:01 error: Error registering user: This email already exists
+2025-05-08 08:36:05 info: POST /api/users/login
+2025-05-08 08:36:05 warn: Login failed: User with email rr@gmail.com not found
+2025-05-08 08:36:05 error: Error: User not found
+2025-05-08 08:36:05 error: Error logging in user: User not found

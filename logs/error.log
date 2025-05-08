@@ -188,3 +188,18 @@
 2025-05-08 07:31:48 error: Error deleting user 681c5dbdbe490766aa16ec33: index_not_found_exception: [index_not_found_exception] Reason: no such index [posts]
 2025-05-08 07:32:06 error: Error: User not found
 2025-05-08 07:32:06 error: Error retrieving user 681c5dbdbe490766aa16ec33: User not found
+2025-05-08 08:34:52 error: Error in registerUser: This email already exists
+2025-05-08 08:34:52 error: Error registering user: This email already exists
+2025-05-08 08:34:57 error: Elasticsearch indexing error: Missing required parameter: body
+2025-05-08 08:35:06 error: Error: User not found
+2025-05-08 08:35:06 error: Error updating user 681c5b3cc52ee660d58a796d: User not found
+2025-05-08 08:35:19 error: Error: User not found
+2025-05-08 08:35:19 error: Error logging in user: User not found
+2025-05-08 08:35:44 error: Error: User not found
+2025-05-08 08:35:44 error: Error updating user 681c5b3cc52ee660d58a796d: User not found
+2025-05-08 08:35:53 error: Error: User not found
+2025-05-08 08:35:53 error: Error logging in user: User not found
+2025-05-08 08:36:01 error: Error in registerUser: This email already exists
+2025-05-08 08:36:01 error: Error registering user: This email already exists
+2025-05-08 08:36:05 error: Error: User not found
+2025-05-08 08:36:05 error: Error logging in user: User not found

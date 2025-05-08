@@ -8,33 +8,72 @@ const  { elasticClient } = require("../config/elastic_search");
 
 const registerUser = async (username, email, password, role) => {
     try {
-        const existingUser = await User.findOne({ email }); // email adresi ile kayıtlı kullanıcı var mı kontrol ediyoruz.
-        if (existingUser) throw new Error("This email already exists"); // eğer varsa hata fırlatıyoruz.
-        const newUser = new User({ username, email, password, role }); // eğer yoksa yeni kullanıcı oluşturuyoruz.
-        await newUser.save(); // yeni kullanıcıyı kaydediyoruz.
-
-        // elatic searche kaydediyoruz.
-        await elasticClient.index({
-            index: "users",
-            id: newUser._id.toString(),
-            document: {
-                username,
-                email,
-                role: role || "user",
-                userId: newUser._id.toString(),
-                createdAt: new Date(),
-            }
+        // Gerekli parametrelerin kontrolü
+        if (!username || !email || !password) {
+            logger.error("Missing required parameters for registration");
+            throw new Error("Missing required parameters: username, email, and password are required");
+        }
+        
+        // Email formatının basit kontrolü
+        const emailRegex = /\S+@\S+\.\S+/;
+        if (!emailRegex.test(email)) {
+            logger.error(`Invalid email format: ${email}`);
+            throw new Error("Invalid email format");
+        }
+        
+        logger.debug(`Checking if email exists: ${email}`);
+        const existingUser = await User.findOne({ email });
+        
+        if (existingUser) {
+            logger.warn(`Registration failed: Email already exists: ${email}`);
+            throw new Error("This email already exists");
+        }
+        
+        // Kullanıcı rolü yoksa varsayılan olarak "user" ata
+        const userRole = role || "user";
+        
+        const newUser = new User({ 
+            username, 
+            email, 
+            password, 
+            role: userRole 
         });
-        logger.info(`New user registered: ${username}, ${email}, ${role || 'user'}`);
+        
+        logger.debug("Saving user to MongoDB");
+        await newUser.save();
+        
+        // Elasticsearch'e kaydet
+        try {
+            logger.debug("Indexing user in Elasticsearch");
+            await elasticClient.index({
+                index: "users",
+                id: newUser._id.toString(),
+                document: {
+                    username,
+                    email,
+                    role: userRole,
+                    userId: newUser._id.toString(),
+                    createdAt: new Date(),
+                }
+            });
+        } catch (elasticError) {
+            // Elasticsearch hatası durumunda işlemi durdurmak yerine loglayalım
+            logger.error(`Elasticsearch indexing error: ${elasticError.message}`);
+            // MongoDB'ye kaydedildi ama Elasticsearch'e kaydedilemedi, bunu da loglayabiliriz
+        }
+        
+        logger.info(`New user registered successfully: ${username}, ${email}, ${userRole}`);
 
         return {
-            message: "User created",
+            success: true,
+            message: "User created successfully",
             userId: newUser._id,
         };
 
     } catch (error) {
         logger.error(`Error in registerUser: ${error.message}`);
-        throw new Error(error.message);
+        // Orijinal hata mesajını koru
+        throw error;
     }
 };
 const loginUser = async (email, password) => {
@@ -117,11 +156,13 @@ const updateUser = async (userId, updateData) => {
         await elasticClient.update({
             index: "users",
             id: userId,
-            doc: {
-                username: updateData.username || user.username,
-                email: updateData.email || user.email,
-                role: updateData.role || user.role,
-                updatedAt: new Date()
+            body: {  // 'document' yerine 'body' kullanın
+                doc: {  // Elasticsearch update API için 'doc' içinde gönderin
+                    username: updateData.username || user.username,
+                    email: updateData.email || user.email,
+                    role: updateData.role || user.role,
+                    updatedAt: new Date()
+                }
             }
         });
         logger.info(`User updated in MongoDB and Elasticsearch: ${userId}`);
