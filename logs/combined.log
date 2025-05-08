@@ -1378,3 +1378,101 @@
 2025-05-08 11:21:36 info: Starting post sync cron job with schedule: 0 */3 * * *
 2025-05-08 11:21:36 info: Cron jobs for Elasticsearch synchronization have been started
 2025-05-08 11:21:36 info: MongoDB connection SUCCESS :)
+2025-05-08 11:41:51 info: Server is running on port 3000
+2025-05-08 11:41:51 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:41:51 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:41:51 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:41:51 info: MongoDB connection SUCCESS :)
+2025-05-08 14:42:00 info: Server is running on port 3000
+2025-05-08 14:42:00 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 14:42:00 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 14:42:00 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 14:42:01 info: MongoDB connection SUCCESS :)
+2025-05-08 11:42:12 info: POST /api/users/login
+2025-05-08 11:42:13 info: Login successful for user: 681c5834cba2b385590c3c59
+2025-05-08 11:42:13 info: User logged in: 681c5834cba2b385590c3c59
+2025-05-08 11:42:27 info: POST /api/sync/users
+2025-05-08 11:42:27 info: starting sync all users
+2025-05-08 11:43:13 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:43:57 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:44:39 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:45:04 info: POST /api/sync/users
+2025-05-08 11:45:04 info: starting sync all users
+2025-05-08 11:45:23 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:45:56 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:46:00 error: Error syncing user 681c897f73084ac698cffde6 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:46:43 error: Error syncing user 681c8f2d8b1ddd2b51758046 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:46:43 info: user sync completed: 0 synced, 6 errors
+2025-05-08 11:46:43 info: User synchronization completed: 0 users synced, 6 errors
+2025-05-08 11:46:43 info: Post synchronization completed: undefined posts synced, undefined errors
+2025-05-08 11:46:45 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:47:32 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:48:16 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:48:40 info: Server is running on port 3000
+2025-05-08 11:48:40 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:48:40 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:48:40 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:48:40 info: MongoDB connection SUCCESS :)
+2025-05-08 11:48:42 info: Server is running on port 3000
+2025-05-08 11:48:42 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:48:42 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:48:42 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:48:42 info: MongoDB connection SUCCESS :)
+2025-05-08 11:48:44 info: Server is running on port 3000
+2025-05-08 11:48:44 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:48:44 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:48:44 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:48:44 info: MongoDB connection SUCCESS :)
+2025-05-08 11:48:48 info: Server is running on port 3000
+2025-05-08 11:48:48 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:48:48 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:48:48 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:48:48 info: MongoDB connection SUCCESS :)
+2025-05-08 11:48:51 info: Server is running on port 3000
+2025-05-08 11:48:51 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:48:51 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:48:51 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:48:51 info: MongoDB connection SUCCESS :)
+2025-05-08 11:49:13 info: Server is running on port 3000
+2025-05-08 11:49:13 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:49:13 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:49:13 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:49:13 info: MongoDB connection SUCCESS :)
+2025-05-08 11:49:33 info: Server is running on port 3000
+2025-05-08 11:49:33 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:49:33 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:49:33 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:49:33 info: MongoDB connection SUCCESS :)
+2025-05-08 11:50:00 info: Server is running on port 3000
+2025-05-08 11:50:00 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:50:00 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:50:00 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:50:00 info: MongoDB connection SUCCESS :)
+2025-05-08 14:50:10 info: Server is running on port 3000
+2025-05-08 14:50:10 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 14:50:10 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 14:50:10 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 14:50:10 info: MongoDB connection SUCCESS :)
+2025-05-08 11:53:24 info: Server is running on port 3000
+2025-05-08 11:53:24 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:53:24 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:53:24 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:53:24 info: MongoDB connection SUCCESS :)
+2025-05-08 11:54:39 info: Server is running on port 3000
+2025-05-08 11:54:39 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 11:54:39 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 11:54:39 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 11:54:39 info: MongoDB connection SUCCESS :)
+2025-05-08 14:54:45 info: Server is running on port 3000
+2025-05-08 14:54:45 info: Starting user sync cron job with schedule: 0 */6 * * *
+2025-05-08 14:54:45 info: Starting post sync cron job with schedule: 0 */3 * * *
+2025-05-08 14:54:45 info: Cron jobs for Elasticsearch synchronization have been started
+2025-05-08 14:54:45 info: MongoDB connection SUCCESS :)
+2025-05-08 11:54:54 info: POST /api/users/login
+2025-05-08 11:54:54 info: Login successful for user: 681c5834cba2b385590c3c59
+2025-05-08 11:54:54 info: User logged in: 681c5834cba2b385590c3c59
+2025-05-08 11:55:02 info: POST /api/sync/users
+2025-05-08 11:55:02 info: starting sync all users
+2025-05-08 11:55:02 info: user sync completed: 6 synced, 0 errors
+2025-05-08 11:55:02 info: User synchronization completed: 6 users synced, 0 errors
+2025-05-08 11:55:02 info: Post synchronization completed: undefined posts synced, undefined errors

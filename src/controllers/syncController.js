@@ -19,11 +19,10 @@ const syncAllUsersController = async(req, res) => {
 const syncAllPostsController = async (req,res)=>{
     try {
         const result = await syncAllPosts();
-        logger.info('post synchronizatin completed {result.synced} posts synced, ${result.errors} errors');
-        res.status(200).json({
+        logger.info(`Post synchronization completed: ${result.syncedCount} posts synced, ${result.errorCount} errors`);        res.status(200).json({
             message: 'post synchronizatin completed',
-            synced: result.synced,
-            errors: result.errors
+            synced: result.syncedCount,
+            errors: result.errorCount
         });
     } catch (error) {
         logger.error(`Error synchronizing posts: ${error.message}`);

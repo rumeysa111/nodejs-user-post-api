@@ -287,3 +287,13 @@
 2025-05-08 11:17:06 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
 2025-05-08 11:17:59 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
 2025-05-08 11:18:43 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:43:13 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:43:57 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:44:39 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:45:23 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:45:56 error: Error syncing user 681c5834cba2b385590c3c59 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:46:00 error: Error syncing user 681c897f73084ac698cffde6 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:46:43 error: Error syncing user 681c8f2d8b1ddd2b51758046 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:46:45 error: Error syncing user 681c5f57be490766aa16ec3e to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:47:32 error: Error syncing user 681c5fefbe490766aa16ec44 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
+2025-05-08 11:48:16 error: Error syncing user 681c6cb181bf74b6fd1a92f9 to Elasticsearch: getaddrinfo ENOTFOUND elasticsearch
