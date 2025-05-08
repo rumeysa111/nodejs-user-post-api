@@ -1,4 +1,3 @@
-Elbette! Aşağıda GitHub’a uygun biçimde düzenlenmiş, **tamamen formatlanmış** ve **kopyalanmaya hazır** bir `README.md` içeriği yer alıyor:
 
 ---
 

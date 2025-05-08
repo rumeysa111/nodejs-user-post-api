@@ -1749,3 +1749,27 @@
 2025-05-08 12:38:00 info: Scheduled post sync completed: 6 posts synced, 0 errors
 2025-05-08 12:38:00 info: user sync completed: 7 synced, 0 errors
 2025-05-08 12:38:00 info: Scheduled user sync completed: 7 users synced, 0 errors
+2025-05-08 12:39:00 info: Running scheduled user sync job
+2025-05-08 12:39:00 info: starting sync all users
+2025-05-08 12:39:00 info: Running scheduled post sync job
+2025-05-08 12:39:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:39:00 info: Post synchronization completed: 6 posts synced, 0 failed
+2025-05-08 12:39:00 info: Scheduled post sync completed: 6 posts synced, 0 errors
+2025-05-08 12:39:00 info: user sync completed: 7 synced, 0 errors
+2025-05-08 12:39:00 info: Scheduled user sync completed: 7 users synced, 0 errors
+2025-05-08 12:40:00 info: Running scheduled user sync job
+2025-05-08 12:40:00 info: starting sync all users
+2025-05-08 12:40:00 info: Running scheduled post sync job
+2025-05-08 12:40:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:40:00 info: Post synchronization completed: 6 posts synced, 0 failed
+2025-05-08 12:40:00 info: Scheduled post sync completed: 6 posts synced, 0 errors
+2025-05-08 12:40:00 info: user sync completed: 7 synced, 0 errors
+2025-05-08 12:40:00 info: Scheduled user sync completed: 7 users synced, 0 errors
+2025-05-08 12:41:00 info: Running scheduled user sync job
+2025-05-08 12:41:00 info: starting sync all users
+2025-05-08 12:41:00 info: Running scheduled post sync job
+2025-05-08 12:41:00 info: Starting full post synchronization from MongoDB to Elasticsearch
+2025-05-08 12:41:00 info: Post synchronization completed: 6 posts synced, 0 failed
+2025-05-08 12:41:00 info: Scheduled post sync completed: 6 posts synced, 0 errors
+2025-05-08 12:41:00 info: user sync completed: 7 synced, 0 errors
+2025-05-08 12:41:00 info: Scheduled user sync completed: 7 users synced, 0 errors
